@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Polishing your words">
   <style>
-    .h-ink { stroke: var(--bello-ink, #211E1B); fill: none; stroke-linecap: round; }
-    .h-marker { stroke: var(--bello-highlight, #F3BFA9); fill: none; stroke-linecap: round; opacity: .62; }
+    .h-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .h-marker { stroke: var(--bello-highlight, #C7E0C3); fill: none; stroke-linecap: round; opacity: .62; }
     .h-swipe { stroke-dasharray: 100 150; stroke-dashoffset: 101; }
     .h-s1 { animation: h-s1 3.4s linear infinite; }
     .h-s2 { animation: h-s2 3.4s linear infinite; }

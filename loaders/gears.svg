@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Turning the gears">
   <style>
-    .g-ink { stroke: var(--bello-ink, #211E1B); fill: none; stroke-linecap: round; }
-    .g-acc { stroke: var(--bello-accent, #C4502C); fill: none; stroke-linecap: round; }
+    .g-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .g-acc { stroke: var(--bello-accent, #3E7B4F); fill: none; stroke-linecap: round; }
     .g-big { transform-origin: 47px 51px; animation: g-cw 4s linear infinite; }
     .g-small { transform-origin: 76px 73px; animation: g-ccw 3s linear infinite; }
     @keyframes g-cw  { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
@@ -22,7 +22,7 @@
     <path class="g-ink" stroke-width="2.6" d="M36.8 40.7 L33.3 37.2"/>
     <path class="g-ink" stroke-width="2.6" d="M47 36.3 L47.1 31.3"/>
     <path class="g-ink" stroke-width="2.6" d="M57.3 40.8 L60.8 37.3"/>
-    <circle fill="var(--bello-ink, #211E1B)" cx="47" cy="51" r="2.4"/>
+    <circle fill="var(--bello-ink, #1E2A21)" cx="47" cy="51" r="2.4"/>
   </g>
   <!-- small gear -->
   <g class="g-small">
@@ -34,6 +34,6 @@
     <path class="g-acc" stroke-width="2.4" d="M66.5 73.7 L62.5 73.6"/>
     <path class="g-acc" stroke-width="2.4" d="M71.2 65.6 L69.2 62.1"/>
     <path class="g-acc" stroke-width="2.4" d="M80.8 65.6 L82.8 62.1"/>
-    <circle fill="var(--bello-accent, #C4502C)" cx="76" cy="73.7" r="2"/>
+    <circle fill="var(--bello-accent, #3E7B4F)" cx="76" cy="73.7" r="2"/>
   </g>
 </svg>

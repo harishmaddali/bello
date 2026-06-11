@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Sending it off">
   <style>
-    .pl-ink { stroke: var(--bello-ink, #211E1B); fill: none; stroke-linecap: round; stroke-linejoin: round; }
-    .pl-body { fill: var(--bello-paper, #FFFEFA); stroke: var(--bello-ink, #211E1B); stroke-width: 2; stroke-linejoin: round; }
+    .pl-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    .pl-body { fill: var(--bello-paper, #FCFEFA); stroke: var(--bello-ink, #1E2A21); stroke-width: 2; stroke-linejoin: round; }
   </style>
   <!-- dotted flight trail -->
   <path id="pl-path" class="pl-ink" stroke-width="2.4" opacity=".45" stroke-dasharray="1 8"

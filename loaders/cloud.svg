@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Tucking it away">
   <style>
-    .cd-ink { stroke: var(--bello-ink, #211E1B); fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    .cd-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; stroke-linejoin: round; }
     .cd-cloud { animation: cd-bob 3.2s ease-in-out infinite alternate; }
     @keyframes cd-bob { from { transform: translateY(-1.5px); } to { transform: translateY(1.5px); } }
-    .cd-arrow { stroke: var(--bello-accent, #C4502C); fill: none; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round;
+    .cd-arrow { stroke: var(--bello-accent, #3E7B4F); fill: none; stroke-width: 3.2; stroke-linecap: round; stroke-linejoin: round;
                 animation: cd-rise 1.9s cubic-bezier(.45,.05,.5,1) infinite; }
     @keyframes cd-rise {
       0%        { transform: translateY(7px); opacity: 0; }

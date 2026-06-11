@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Inking it in">
   <style>
-    .p-bar { stroke: var(--bello-ink, #211E1B); fill: none; stroke-width: 2.8; stroke-linejoin: round; stroke-linecap: round; }
+    .p-bar { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-width: 2.8; stroke-linejoin: round; stroke-linecap: round; }
     .p-fill {
-      stroke: var(--bello-accent, #C4502C); fill: none; stroke-width: 4.6;
+      stroke: var(--bello-accent, #3E7B4F); fill: none; stroke-width: 4.6;
       stroke-linejoin: round; stroke-linecap: round; opacity: .92;
       stroke-dasharray: 100 150; stroke-dashoffset: 101;
       animation: p-draw 3.6s linear infinite;

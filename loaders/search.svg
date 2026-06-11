@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Looking it up">
   <style>
-    .se-ink { stroke: var(--bello-ink, #211E1B); fill: none; stroke-linecap: round; }
-    .se-glint { stroke: var(--bello-accent, #C4502C); fill: none; stroke-linecap: round; animation: se-glint 3.2s ease-in-out infinite; }
+    .se-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .se-glint { stroke: var(--bello-accent, #3E7B4F); fill: none; stroke-linecap: round; animation: se-glint 3.2s ease-in-out infinite; }
     @keyframes se-glint { 0%, 100% { opacity: .25; } 50% { opacity: .9; } }
     .se-glass { animation: se-sweep 3.2s cubic-bezier(.45,.05,.4,.95) infinite; }
     @keyframes se-sweep {

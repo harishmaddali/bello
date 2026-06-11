@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Sketching your post">
   <style>
-    .n-ink { stroke: var(--bello-ink, #211E1B); fill: none; stroke-linecap: round; }
-    .n-page { fill: var(--bello-paper, #FFFEFA); stroke: var(--bello-ink, #211E1B); stroke-width: 2.6; stroke-linejoin: round; }
-    .n-accent { stroke: var(--bello-accent, #C4502C); fill: none; stroke-linecap: round; }
+    .n-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .n-page { fill: var(--bello-paper, #FCFEFA); stroke: var(--bello-ink, #1E2A21); stroke-width: 2.6; stroke-linejoin: round; }
+    .n-accent { stroke: var(--bello-accent, #3E7B4F); fill: none; stroke-linecap: round; }
     /* hand-drawn "line boil": two jittered page outlines alternating */
     .n-pageA { animation: n-bA 0.64s steps(1, end) infinite; }
     .n-pageB { animation: n-bB 0.64s steps(1, end) infinite; }
@@ -15,7 +15,7 @@
     @keyframes n-l1 { 0%, 5%  { stroke-dashoffset: 101; } 17%, 100% { stroke-dashoffset: 0; } }
     @keyframes n-l2 { 0%, 26% { stroke-dashoffset: 101; } 40%, 100% { stroke-dashoffset: 0; } }
     @keyframes n-l3 { 0%, 47% { stroke-dashoffset: 101; } 60%, 100% { stroke-dashoffset: 0; } }
-    .n-dot { fill: var(--bello-ink, #211E1B); transform-box: fill-box; transform-origin: 50% 50%; animation: n-dot 3.6s ease-out infinite; }
+    .n-dot { fill: var(--bello-ink, #1E2A21); transform-box: fill-box; transform-origin: 50% 50%; animation: n-dot 3.6s ease-out infinite; }
     @keyframes n-dot {
       0%, 64% { transform: scale(0); opacity: 0; }
       69%     { transform: scale(1.25); opacity: 1; }

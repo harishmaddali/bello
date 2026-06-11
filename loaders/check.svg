@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Done">
   <style>
     .c-ring {
-      stroke: var(--bello-ink, #211E1B); fill: none; stroke-width: 3; stroke-linecap: round;
+      stroke: var(--bello-ink, #1E2A21); fill: none; stroke-width: 3; stroke-linecap: round;
       stroke-dasharray: 100 150; stroke-dashoffset: 101;
       animation: c-ring 3.2s linear infinite;
     }
     @keyframes c-ring { 0%, 2% { stroke-dashoffset: 101; } 32%, 100% { stroke-dashoffset: 0; } }
     .c-mark {
-      stroke: var(--bello-accent, #C4502C); fill: none; stroke-width: 3.8; stroke-linecap: round; stroke-linejoin: round;
+      stroke: var(--bello-accent, #3E7B4F); fill: none; stroke-width: 3.8; stroke-linecap: round; stroke-linejoin: round;
       stroke-dasharray: 100 150; stroke-dashoffset: 101;
       animation: c-mark 3.2s linear infinite;
     }

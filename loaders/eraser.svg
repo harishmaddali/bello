@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Tidying it up">
   <style>
-    .e-ink { stroke: var(--bello-ink, #211E1B); fill: none; stroke-linecap: round; }
-    .e-body { fill: var(--bello-highlight, #F3BFA9); stroke: var(--bello-ink, #211E1B); stroke-width: 2.2; stroke-linejoin: round; }
+    .e-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .e-body { fill: var(--bello-highlight, #C7E0C3); stroke: var(--bello-ink, #1E2A21); stroke-width: 2.2; stroke-linejoin: round; }
     .e-scribble {
       stroke-dasharray: 100 150; stroke-dashoffset: 101;
       animation: e-line 3.8s linear infinite;
@@ -21,7 +21,7 @@
     }
     .e-wiggle { animation: e-wiggle .16s ease-in-out infinite alternate; }
     @keyframes e-wiggle { from { transform: translate(-1.5px, -1.2px); } to { transform: translate(1.5px, 1.2px); } }
-    .e-crumb { fill: var(--bello-ink, #211E1B); transform-box: fill-box; transform-origin: 50% 50%; animation: e-crumb 3.8s ease-out infinite; }
+    .e-crumb { fill: var(--bello-ink, #1E2A21); transform-box: fill-box; transform-origin: 50% 50%; animation: e-crumb 3.8s ease-out infinite; }
     .e-c2 { animation-delay: .35s; }
     @keyframes e-crumb {
       0%, 46%   { transform: scale(0); opacity: 0; }

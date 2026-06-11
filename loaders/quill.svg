@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Writing your draft">
   <style>
-    .q-ink { stroke: var(--bello-ink, #211E1B); }
-    .q-feather { fill: var(--bello-accent, #C4502C); }
+    .q-ink { stroke: var(--bello-ink, #1E2A21); }
+    .q-feather { fill: var(--bello-accent, #3E7B4F); }
   </style>
   <!-- ink squiggle -->
   <g>

@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Adding the magic">
   <style>
-    .s-ink { fill: var(--bello-ink, #211E1B); }
-    .s-acc { fill: var(--bello-accent, #C4502C); }
+    .s-ink { fill: var(--bello-ink, #1E2A21); }
+    .s-acc { fill: var(--bello-accent, #3E7B4F); }
     .s-star { transform-box: fill-box; transform-origin: 50% 50%; animation: s-tw 2.4s cubic-bezier(.4,.05,.35,1) infinite; }
     .s-2 { animation-delay: .55s; }
     .s-3 { animation-delay: 1.15s; }

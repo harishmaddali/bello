@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Thinking it through">
   <style>
-    .t-blob { fill: var(--bello-ink, #211E1B); }
-    .t-tail { stroke: var(--bello-ink, #211E1B); fill: none; stroke-width: 1.6; stroke-linecap: round; }
+    .t-blob { fill: var(--bello-ink, #1E2A21); }
+    .t-tail { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-width: 1.6; stroke-linecap: round; }
     .t-g { transform-box: fill-box; transform-origin: 50% 50%; animation: t-pop 1.3s cubic-bezier(.45,.05,.35,1) infinite; }
     .t-g2 { animation-delay: .17s; }
     .t-g3 { animation-delay: .34s; }

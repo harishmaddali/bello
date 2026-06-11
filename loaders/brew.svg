@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Steeping ideas">
   <style>
-    .b-ink { stroke: var(--bello-ink, #211E1B); fill: none; stroke-linecap: round; }
+    .b-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
     .b-steam {
-      stroke: var(--bello-ink, #211E1B); fill: none; stroke-width: 2.6; stroke-linecap: round;
+      stroke: var(--bello-ink, #1E2A21); fill: none; stroke-width: 2.6; stroke-linecap: round;
       stroke-dasharray: 60 100;
       animation: b-flow 3s linear infinite;
     }

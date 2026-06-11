@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Having an idea">
   <style>
-    .bu-ink { stroke: var(--bello-ink, #211E1B); fill: none; stroke-linecap: round; }
-    .bu-ray { stroke: var(--bello-accent, #C4502C); fill: none; stroke-linecap: round; stroke-width: 2.8;
+    .bu-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .bu-ray { stroke: var(--bello-accent, #3E7B4F); fill: none; stroke-linecap: round; stroke-width: 2.8;
               transform-box: fill-box; transform-origin: 50% 50%; animation: bu-ray 2.8s cubic-bezier(.4,.05,.35,1) infinite; }
     .bu-r2 { animation-delay: .12s; } .bu-r3 { animation-delay: .22s; }
     .bu-r4 { animation-delay: .07s; } .bu-r5 { animation-delay: .17s; }

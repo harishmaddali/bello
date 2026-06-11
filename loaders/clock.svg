@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Any moment now">
   <style>
-    .cl-ink { stroke: var(--bello-ink, #211E1B); fill: none; stroke-linecap: round; }
+    .cl-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
     .cl-minute {
-      stroke: var(--bello-accent, #C4502C);
+      stroke: var(--bello-accent, #3E7B4F);
       transform-origin: 60px 61px;
       animation: cl-turn 3s steps(12, end) infinite;
     }
@@ -26,5 +26,5 @@
   <!-- hands -->
   <path class="cl-ink cl-hour" stroke-width="3" d="M60 61 C58.4 58.6 56.8 56 55 53"/>
   <path class="cl-minute" fill="none" stroke-width="2.8" stroke-linecap="round" d="M60 61 C60.3 56.5 60.1 51.5 59.8 46.5"/>
-  <circle fill="var(--bello-ink, #211E1B)" cx="60" cy="61" r="2.2"/>
+  <circle fill="var(--bello-ink, #1E2A21)" cx="60" cy="61" r="2.2"/>
 </svg>

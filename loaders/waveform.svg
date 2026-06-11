@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Listening closely">
   <style>
-    .w-bar { stroke: var(--bello-ink, #211E1B); fill: none; stroke-width: 3.4; stroke-linecap: round;
+    .w-bar { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-width: 3.4; stroke-linecap: round;
              transform-box: fill-box; transform-origin: 50% 50%;
              animation: w-dance .62s ease-in-out infinite alternate; }
-    .w-mid { stroke: var(--bello-accent, #C4502C); }
+    .w-mid { stroke: var(--bello-accent, #3E7B4F); }
     .w-b2 { animation-delay: -.08s; } .w-b3 { animation-delay: -.16s; }
     .w-b4 { animation-delay: -.24s; } .w-b5 { animation-delay: -.32s; }
     .w-b6 { animation-delay: -.40s; } .w-b7 { animation-delay: -.48s; }

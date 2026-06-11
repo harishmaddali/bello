@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Gathering sources">
   <style>
-    .st-card { fill: var(--bello-paper, #FFFEFA); stroke: var(--bello-ink, #211E1B); stroke-width: 2.4; stroke-linejoin: round; }
-    .st-ink { stroke: var(--bello-ink, #211E1B); fill: none; stroke-linecap: round; }
-    .st-acc { stroke: var(--bello-accent, #C4502C); fill: none; stroke-linecap: round; }
+    .st-card { fill: var(--bello-paper, #FCFEFA); stroke: var(--bello-ink, #1E2A21); stroke-width: 2.4; stroke-linejoin: round; }
+    .st-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .st-acc { stroke: var(--bello-accent, #3E7B4F); fill: none; stroke-linecap: round; }
     .st-1, .st-2, .st-3 { transform-box: fill-box; transform-origin: 50% 50%; }
     .st-1 { animation: st-d1 3.6s cubic-bezier(.4,.05,.35,1) infinite; }
     .st-2 { animation: st-d2 3.6s cubic-bezier(.4,.05,.35,1) infinite; }
