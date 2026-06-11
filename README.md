@@ -2,7 +2,7 @@
 
 Hand-drawn loading animations for thoughtful products.
 
-Ten sketchy, ink-and-paper loaders — the kind you show while your product is writing, thinking,
+Twenty sketchy, ink-and-paper loaders — the kind you show while your product is writing, thinking,
 or brewing something for the user. Each one is a **single self-contained `.svg` file**: animation,
 easing, and reduced-motion handling baked in. No JavaScript, no CSS file, no dependencies.
 
@@ -26,6 +26,16 @@ python3 -m http.server 4173   # then visit http://localhost:4173
 | [`loaders/progress.svg`](loaders/progress.svg) | Progress | "Inking it in…" | determinate-ish progress |
 | [`loaders/plane.svg`](loaders/plane.svg) | Plane | "Sending it off…" | submitting, publishing |
 | [`loaders/check.svg`](loaders/check.svg) | Check | "And… done." | success states |
+| [`loaders/search.svg`](loaders/search.svg) | Search | "Looking it up…" | search, retrieval |
+| [`loaders/eraser.svg`](loaders/eraser.svg) | Eraser | "Tidying it up…" | cleanup, revisions |
+| [`loaders/bulb.svg`](loaders/bulb.svg) | Bulb | "Having an idea…" | brainstorming |
+| [`loaders/clock.svg`](loaders/clock.svg) | Clock | "Any moment now…" | queued / waiting |
+| [`loaders/gears.svg`](loaders/gears.svg) | Gears | "Turning the gears…" | heavy processing |
+| [`loaders/waveform.svg`](loaders/waveform.svg) | Waveform | "Listening closely…" | voice, transcription |
+| [`loaders/cloud.svg`](loaders/cloud.svg) | Cloud | "Tucking it away…" | saving, syncing |
+| [`loaders/sprout.svg`](loaders/sprout.svg) | Sprout | "Growing the idea…" | drafts taking shape |
+| [`loaders/stack.svg`](loaders/stack.svg) | Stack | "Gathering sources…" | research, aggregation |
+| [`loaders/signal.svg`](loaders/signal.svg) | Signal | "Reaching the model…" | API / network calls |
 
 ## Use
 
@@ -56,6 +66,10 @@ page won't collide. Size with `width`/`height` or CSS — everything is stroke-b
 - **Reduced motion:** the CSS-driven loaders render their finished, static frame under
   `prefers-reduced-motion: reduce`. Quill and Plane animate via SMIL (for perfect
   motion-along-path); pause them with `svg.pauseAnimations()` if you need to.
+- **`<img>` vs inline:** Chromium only advances an SVG image's internal animation clock while
+  the image is painted on screen. For a loader that's shown when it's needed, that's fine —
+  but if you need animation state to survive off-screen scrolling, inline the SVG (the demo
+  page does).
 - **Accessibility:** every file carries `role="img"` and an `aria-label`; when used decoratively
   next to a visible caption, add `aria-hidden="true"`.
 - **The look:** wobbly paths, round caps, a touch of "line boil" (Note and Progress redraw their

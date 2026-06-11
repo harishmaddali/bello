@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Any moment now">
+  <style>
+    .cl-ink { stroke: var(--bello-ink, #211E1B); fill: none; stroke-linecap: round; }
+    .cl-minute {
+      stroke: var(--bello-accent, #C4502C);
+      transform-origin: 60px 61px;
+      animation: cl-turn 3s steps(12, end) infinite;
+    }
+    .cl-hour {
+      transform-origin: 60px 61px;
+      animation: cl-turn 9s linear infinite;
+    }
+    @keyframes cl-turn { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) {
+      .cl-minute, .cl-hour { animation: none; }
+    }
+  </style>
+  <!-- face -->
+  <path class="cl-ink" stroke-width="3"
+        d="M60 37 C73.5 36.2 84.8 47.5 84.2 61.5 C83.6 75 72.5 85.6 59.2 85 C46 84.4 35.6 73.8 36.2 60.2 C36.8 47.4 47.5 37.7 60 37"/>
+  <!-- ticks -->
+  <path class="cl-ink" stroke-width="2.2" d="M60 41.5 C60 42.8 60 44 60.1 45.2"/>
+  <path class="cl-ink" stroke-width="2.2" d="M79.8 61.2 C78.5 61.2 77.2 61.2 76 61.1"/>
+  <path class="cl-ink" stroke-width="2.2" d="M59.9 80.5 C59.9 79.2 59.9 78 60 76.8"/>
+  <path class="cl-ink" stroke-width="2.2" d="M40.5 60.8 C41.8 60.9 43.1 60.9 44.3 60.9"/>
+  <!-- hands -->
+  <path class="cl-ink cl-hour" stroke-width="3" d="M60 61 C58.4 58.6 56.8 56 55 53"/>
+  <path class="cl-minute" fill="none" stroke-width="2.8" stroke-linecap="round" d="M60 61 C60.3 56.5 60.1 51.5 59.8 46.5"/>
+  <circle fill="var(--bello-ink, #211E1B)" cx="60" cy="61" r="2.2"/>
+</svg>

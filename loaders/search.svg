@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Looking it up">
+  <style>
+    .se-ink { stroke: var(--bello-ink, #211E1B); fill: none; stroke-linecap: round; }
+    .se-glint { stroke: var(--bello-accent, #C4502C); fill: none; stroke-linecap: round; animation: se-glint 3.2s ease-in-out infinite; }
+    @keyframes se-glint { 0%, 100% { opacity: .25; } 50% { opacity: .9; } }
+    .se-glass { animation: se-sweep 3.2s cubic-bezier(.45,.05,.4,.95) infinite; }
+    @keyframes se-sweep {
+      0%   { transform: translate(0px, 0px) rotate(-3deg); }
+      48%  { transform: translate(25px, 3px) rotate(4deg); }
+      62%  { transform: translate(22px, 2px) rotate(2deg); }
+      100% { transform: translate(0px, 0px) rotate(-3deg); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .se-glass, .se-glint { animation: none; }
+    }
+  </style>
+  <!-- text being searched -->
+  <path class="se-ink" stroke-width="3" d="M24 76 C36 75 50 76.4 62 75.6 C72 75.2 82 76 90 75.6"/>
+  <path class="se-ink" stroke-width="3" d="M28 86.5 C40 85.7 54 86.8 70 86"/>
+  <!-- magnifier -->
+  <g class="se-glass">
+    <path class="se-ink" stroke-width="3"
+          d="M48 33.5 C56 33.2 61.5 39 61.3 46.5 C61.1 54 55.5 59.3 48.2 59 C40.8 58.7 35.4 53.2 35.7 45.6 C36 38.5 41 33.8 48 33.5"/>
+    <path class="se-ink" stroke-width="3.6" d="M57.5 55.5 C61 59 64.5 62.7 67.5 66"/>
+    <path class="se-glint" stroke-width="2.2" d="M42.5 41 C43.5 39 45.5 37.6 47.5 37.3"/>
+  </g>
+</svg>

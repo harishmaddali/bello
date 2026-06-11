@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Listening closely">
+  <style>
+    .w-bar { stroke: var(--bello-ink, #211E1B); fill: none; stroke-width: 3.4; stroke-linecap: round;
+             transform-box: fill-box; transform-origin: 50% 50%;
+             animation: w-dance .62s ease-in-out infinite alternate; }
+    .w-mid { stroke: var(--bello-accent, #C4502C); }
+    .w-b2 { animation-delay: -.08s; } .w-b3 { animation-delay: -.16s; }
+    .w-b4 { animation-delay: -.24s; } .w-b5 { animation-delay: -.32s; }
+    .w-b6 { animation-delay: -.40s; } .w-b7 { animation-delay: -.48s; }
+    @keyframes w-dance { from { transform: scaleY(.4); } to { transform: scaleY(1.15); } }
+    @media (prefers-reduced-motion: reduce) {
+      .w-bar { animation: none; transform: scaleY(.8); }
+    }
+  </style>
+  <path class="w-bar w-b1" d="M36 54.5 C36.2 58 36.1 62 36 65.5"/>
+  <path class="w-bar w-b2" d="M44 48 C44.3 56 44.2 64 44 72"/>
+  <path class="w-bar w-b3" d="M52 51.5 C52.2 57 52.1 63 52 68.5"/>
+  <path class="w-bar w-b4 w-mid" d="M60 42 C60.3 54 60.2 66 60 78"/>
+  <path class="w-bar w-b5" d="M68 50 C68.2 56.5 68.1 63.5 68 70"/>
+  <path class="w-bar w-b6" d="M76 46 C76.3 55.5 76.2 64.5 76 74"/>
+  <path class="w-bar w-b7" d="M84 53.5 C84.2 58 84.1 62.5 84 66.5"/>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Tidying it up">
+  <style>
+    .e-ink { stroke: var(--bello-ink, #211E1B); fill: none; stroke-linecap: round; }
+    .e-body { fill: var(--bello-highlight, #F3BFA9); stroke: var(--bello-ink, #211E1B); stroke-width: 2.2; stroke-linejoin: round; }
+    .e-scribble {
+      stroke-dasharray: 100 150; stroke-dashoffset: 101;
+      animation: e-line 3.8s linear infinite;
+    }
+    @keyframes e-line {
+      0%, 2%   { stroke-dashoffset: 101; }  /* hidden */
+      16%      { stroke-dashoffset: 0; }    /* scribbled in */
+      30%      { stroke-dashoffset: 0; }    /* hold */
+      78%, 100%{ stroke-dashoffset: -101; } /* erased from the start */
+    }
+    .e-rub { animation: e-travel 3.8s linear infinite; }
+    @keyframes e-travel {
+      0%, 26%  { transform: translateX(0px); opacity: 0; }
+      30%      { transform: translateX(2px); opacity: 1; }
+      76%      { transform: translateX(58px); opacity: 1; }
+      81%, 100%{ transform: translateX(62px); opacity: 0; }
+    }
+    .e-wiggle { animation: e-wiggle .16s ease-in-out infinite alternate; }
+    @keyframes e-wiggle { from { transform: translate(-1.5px, -1.2px); } to { transform: translate(1.5px, 1.2px); } }
+    .e-crumb { fill: var(--bello-ink, #211E1B); transform-box: fill-box; transform-origin: 50% 50%; animation: e-crumb 3.8s ease-out infinite; }
+    .e-c2 { animation-delay: .35s; }
+    @keyframes e-crumb {
+      0%, 46%   { transform: scale(0); opacity: 0; }
+      51%       { transform: scale(1); opacity: .7; }
+      84%       { transform: scale(1) translateY(2px); opacity: .7; }
+      92%, 100% { opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .e-scribble, .e-rub, .e-wiggle, .e-crumb { animation: none; }
+      .e-scribble { stroke-dasharray: none; stroke-dashoffset: 0; }
+      .e-rub, .e-crumb { opacity: 0; }
+    }
+  </style>
+  <!-- loopy pencil scribble -->
+  <path class="e-ink e-scribble" stroke-width="2.8" pathLength="100"
+        d="M24 66 C30 54 38 52 36 62 C34 72 44 72 48 60 C52 50 60 52 58 62 C56 72 66 72 70 60 C73 52 80 52 82 58 C84 64 90 63 94 59"/>
+  <!-- eraser block scrubbing -->
+  <g class="e-rub">
+    <g class="e-wiggle">
+      <path class="e-body" d="M22 52.5 C27 48.5 33 45 38.5 42.5 C40.5 45 42.3 48 43.6 51 C38.5 54 33 57.5 28.2 61 C26 58.5 24 55.5 22 52.5 Z"/>
+      <path class="e-ink" stroke-width="1.8" opacity=".55" d="M28.5 48.2 C30.5 51 32.5 54 34.3 57"/>
+    </g>
+  </g>
+  <!-- crumbs -->
+  <circle class="e-crumb" cx="46" cy="74" r="1.6"/>
+  <circle class="e-crumb e-c2" cx="62" cy="76.5" r="1.3"/>
+</svg>

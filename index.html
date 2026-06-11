@@ -51,7 +51,7 @@
     display: flex; align-items: center; justify-content: center;
     aspect-ratio: 21 / 19;
   }
-  .card img { width: 132px; height: 132px; display: block; }
+  .card svg { width: 132px; height: 132px; display: block; }
 
   .copy {
     position: absolute; top: 10px; right: 10px;
@@ -93,7 +93,7 @@
     <h1>bello<span class="tilde">~</span></h1>
     <p class="tagline">Hand-drawn loading animations for thoughtful products.</p>
     <div class="meta-row">
-      <span>10 loaders</span>
+      <span>20 loaders</span>
       <span>self-contained SVG</span>
       <span>zero dependencies</span>
       <span>MIT</span>
@@ -123,28 +123,48 @@
     ["sparkle",   "Sparkle",   "Adding the magic…"],
     ["progress",  "Progress",  "Inking it in…"],
     ["plane",     "Plane",     "Sending it off…"],
-    ["check",     "Check",     "And… done."]
+    ["check",     "Check",     "And… done."],
+    ["search",    "Search",    "Looking it up…"],
+    ["eraser",    "Eraser",    "Tidying it up…"],
+    ["bulb",      "Bulb",      "Having an idea…"],
+    ["clock",     "Clock",     "Any moment now…"],
+    ["gears",     "Gears",     "Turning the gears…"],
+    ["waveform",  "Waveform",  "Listening closely…"],
+    ["cloud",     "Cloud",     "Tucking it away…"],
+    ["sprout",    "Sprout",    "Growing the idea…"],
+    ["stack",     "Stack",     "Gathering sources…"],
+    ["signal",    "Signal",    "Reaching the model…"]
   ];
 
+  // SVGs are inlined (not <img>) so every animation runs on the page timeline —
+  // Chromium freezes an SVG image's internal clock while it's outside the viewport.
   const grid = document.getElementById("grid");
-  LOADERS.forEach(([name, title, caption], i) => {
+  const source = {};
+  LOADERS.forEach(async ([name, title, caption], i) => {
     const cell = document.createElement("div");
     cell.className = "cell";
     cell.style.animationDelay = (i * 45) + "ms";
     cell.innerHTML = `
       <div class="card">
-        <img src="loaders/${name}.svg" width="132" height="132" alt="">
         <button class="copy" data-name="${name}" aria-label="Copy ${title} SVG">Copy SVG</button>
       </div>
       <div class="label"><b>${title}</b><small>${caption}</small></div>`;
     grid.appendChild(cell);
+    try {
+      const text = await (await fetch(`loaders/${name}.svg`)).text();
+      source[name] = text;
+      cell.querySelector(".card").insertAdjacentHTML("afterbegin", text);
+    } catch {
+      cell.querySelector(".card").insertAdjacentHTML("afterbegin",
+        `<img src="loaders/${name}.svg" width="132" height="132" alt="">`);
+    }
   });
 
   grid.addEventListener("click", async (e) => {
     const btn = e.target.closest(".copy");
     if (!btn) return;
     try {
-      const text = await (await fetch(`loaders/${btn.dataset.name}.svg`)).text();
+      const text = source[btn.dataset.name] ?? await (await fetch(`loaders/${btn.dataset.name}.svg`)).text();
       await navigator.clipboard.writeText(text);
       btn.textContent = "Copied ✓";
     } catch {

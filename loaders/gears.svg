@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Turning the gears">
+  <style>
+    .g-ink { stroke: var(--bello-ink, #211E1B); fill: none; stroke-linecap: round; }
+    .g-acc { stroke: var(--bello-accent, #C4502C); fill: none; stroke-linecap: round; }
+    .g-big { transform-origin: 47px 51px; animation: g-cw 4s linear infinite; }
+    .g-small { transform-origin: 76px 73px; animation: g-ccw 3s linear infinite; }
+    @keyframes g-cw  { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @keyframes g-ccw { from { transform: rotate(0deg); } to { transform: rotate(-360deg); } }
+    @media (prefers-reduced-motion: reduce) {
+      .g-big, .g-small { animation: none; }
+    }
+  </style>
+  <!-- big gear -->
+  <g class="g-big">
+    <path class="g-ink" stroke-width="2.8"
+          d="M47 36.5 C55.5 36.2 61.6 42.8 61.4 51.3 C61.2 59.6 54.8 65.7 46.6 65.4 C38.6 65.1 32.6 58.8 32.8 50.6 C33 42.7 39 36.8 47 36.5"/>
+    <path class="g-ink" stroke-width="2.6" d="M61.5 51 L66.5 51.2"/>
+    <path class="g-ink" stroke-width="2.6" d="M57.2 61.4 L60.7 64.9"/>
+    <path class="g-ink" stroke-width="2.6" d="M47 65.6 L46.9 70.6"/>
+    <path class="g-ink" stroke-width="2.6" d="M36.7 61.3 L33.2 64.8"/>
+    <path class="g-ink" stroke-width="2.6" d="M32.6 51 L27.6 50.9"/>
+    <path class="g-ink" stroke-width="2.6" d="M36.8 40.7 L33.3 37.2"/>
+    <path class="g-ink" stroke-width="2.6" d="M47 36.3 L47.1 31.3"/>
+    <path class="g-ink" stroke-width="2.6" d="M57.3 40.8 L60.8 37.3"/>
+    <circle fill="var(--bello-ink, #211E1B)" cx="47" cy="51" r="2.4"/>
+  </g>
+  <!-- small gear -->
+  <g class="g-small">
+    <path class="g-acc" stroke-width="2.6"
+          d="M76 64.5 C81.5 64.3 85.6 68.5 85.4 74 C85.2 79.3 81 83.2 75.7 83 C70.5 82.8 66.6 78.7 66.8 73.4 C67 68.3 70.8 64.7 76 64.5"/>
+    <path class="g-acc" stroke-width="2.4" d="M85.6 73.7 L89.6 73.8"/>
+    <path class="g-acc" stroke-width="2.4" d="M80.8 81.9 L82.8 85.4"/>
+    <path class="g-acc" stroke-width="2.4" d="M71.2 81.9 L69.2 85.4"/>
+    <path class="g-acc" stroke-width="2.4" d="M66.5 73.7 L62.5 73.6"/>
+    <path class="g-acc" stroke-width="2.4" d="M71.2 65.6 L69.2 62.1"/>
+    <path class="g-acc" stroke-width="2.4" d="M80.8 65.6 L82.8 62.1"/>
+    <circle fill="var(--bello-accent, #C4502C)" cx="76" cy="73.7" r="2"/>
+  </g>
+</svg>
