@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Sailing along">
+  <style>
+    .bo-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .bo-paper { fill: var(--bello-paper, #FCFEFA); stroke: var(--bello-ink, #1E2A21); stroke-linejoin: round; }
+    .bo-w1 { animation: bo-drift 2.4s ease-in-out infinite alternate; }
+    .bo-w2 { animation: bo-drift 2.9s ease-in-out infinite alternate-reverse; }
+    @keyframes bo-drift { from { transform: translateX(-5px); } to { transform: translateX(5px); } }
+    .bo-boat { transform-origin: 60px 66px; animation: bo-bob 2.7s ease-in-out infinite alternate; }
+    @keyframes bo-bob {
+      from { transform: translateY(-2.2px) rotate(-3deg); }
+      to   { transform: translateY(2.4px) rotate(3.5deg); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .bo-w1, .bo-w2, .bo-boat { animation: none; }
+    }
+  </style>
+  <path class="bo-ink bo-w2" stroke-width="2.4" opacity=".4" d="M20 81 Q28 77.5 36 81 T52 81 T68 81 T84 81 T100 81"/>
+  <g class="bo-boat">
+    <path class="bo-paper" stroke-width="2.2" d="M59.5 62.5 C59.8 54 59.6 45 59.4 37.5 C66 44.5 72 52.5 76.5 61.5 C71 62.6 65 62.8 59.5 62.5 Z"/>
+    <path fill="var(--bello-accent, #3E7B4F)" d="M59.4 37.5 C56.6 36 53.8 35 51 34.2 C51.9 36.3 51.8 38.5 51.2 40.6 C53.9 39.5 56.7 38.5 59.4 37.5 Z"/>
+    <path class="bo-paper" stroke-width="2.4" d="M40 64 C46 64.6 74 64.6 80 64 C77 70 72 74.5 60.5 74.8 C49 75 43 70 40 64 Z"/>
+  </g>
+  <path class="bo-ink bo-w1" stroke-width="2.8" d="M14 76 Q22 72 30 76 T46 76 T62 76 T78 76 T94 76"/>
+</svg>

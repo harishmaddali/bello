@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Rolling the options">
+  <style>
+    .d-pip { fill: var(--bello-ink, #1E2A21); }
+    .d-die { transform-origin: 60px 62px; animation: d-tumble 2.6s ease-in-out infinite; }
+    @keyframes d-tumble {
+      0%, 4%  { transform: none; }
+      11%     { transform: translateY(-11px) rotate(46deg); }
+      17%     { transform: translateY(0) rotate(92deg); }
+      20%     { transform: rotate(88deg) scale(1.05, .93); }
+      24%, 54%{ transform: rotate(90deg); }
+      61%     { transform: translateY(-11px) rotate(136deg); }
+      67%     { transform: translateY(0) rotate(182deg); }
+      70%     { transform: rotate(178deg) scale(1.05, .93); }
+      74%, 100% { transform: rotate(180deg); }
+    }
+    /* pips swap mid-air at each hop apex */
+    .d-pa { animation: d-pa 2.6s linear infinite; }
+    .d-pb { animation: d-pb 2.6s linear infinite; }
+    @keyframes d-pa { 0%, 10.9% { opacity: 1; } 11%, 60.9% { opacity: 0; } 61%, 100% { opacity: 1; } }
+    @keyframes d-pb { 0%, 10.9% { opacity: 0; } 11%, 60.9% { opacity: 1; } 61%, 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .d-die, .d-pa, .d-pb { animation: none; }
+      .d-pb { opacity: 0; }
+    }
+  </style>
+  <g class="d-die">
+    <path fill="var(--bello-paper, #FCFEFA)" stroke="var(--bello-ink, #1E2A21)" stroke-width="2.6" stroke-linejoin="round"
+          d="M46 50 C55 48.8 66 49 74.5 50.2 C75.8 58.5 75.6 67 74.6 74.5 C66 75.6 55 75.4 46.4 74.4 C45.2 67 45.3 58 46 50 Z"/>
+    <g class="d-pa">
+      <circle class="d-pip" cx="53" cy="55.4" r="2.3"/>
+      <circle class="d-pip" cx="60.2" cy="62.2" r="2.3"/>
+      <circle class="d-pip" cx="67.2" cy="69" r="2.3"/>
+    </g>
+    <g class="d-pb">
+      <circle class="d-pip" cx="53" cy="55.2" r="2.1"/>
+      <circle class="d-pip" cx="67.2" cy="55.4" r="2.1"/>
+      <circle class="d-pip" cx="60.1" cy="62.3" r="2.1"/>
+      <circle class="d-pip" cx="53.2" cy="69" r="2.1"/>
+      <circle class="d-pip" cx="67" cy="68.8" r="2.1"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Trimming it down">
+  <style>
+    .sc-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .sc-slit {
+      stroke-dasharray: 100 150; stroke-dashoffset: 101;
+      animation: sc-cut 3.8s linear infinite;
+    }
+    @keyframes sc-cut {
+      0%, 8%    { stroke-dashoffset: 101; opacity: 1; }
+      70%       { stroke-dashoffset: 0; opacity: 1; }
+      84%       { stroke-dashoffset: 0; opacity: 1; }
+      94%, 99.9%{ stroke-dashoffset: 0; opacity: 0; }
+      100%      { stroke-dashoffset: 101; opacity: 1; }
+    }
+    .sc-move { animation: sc-move 3.8s linear infinite; }
+    @keyframes sc-move {
+      0%, 8%   { transform: translate(0px, 0px); opacity: 1; }
+      70%      { transform: translate(62px, -0.7px); opacity: 1; }
+      78%, 99.9% { transform: translate(64px, -0.7px); opacity: 0; }
+      100%     { transform: translate(0px, 0px); opacity: 1; }
+    }
+    .sc-a, .sc-b { transform-origin: 0px 0px; animation: sc-snipA .38s ease-in-out infinite alternate; }
+    .sc-b { animation-name: sc-snipB; }
+    @keyframes sc-snipA { from { transform: rotate(1deg); }  to { transform: rotate(10deg); } }
+    @keyframes sc-snipB { from { transform: rotate(-1deg); } to { transform: rotate(-10deg); } }
+    @media (prefers-reduced-motion: reduce) {
+      .sc-slit, .sc-move, .sc-a, .sc-b { animation: none; }
+      .sc-slit { stroke-dasharray: none; stroke-dashoffset: 0; }
+      .sc-move { opacity: 0; }
+    }
+  </style>
+  <!-- cut-here guide -->
+  <path class="sc-ink" stroke-width="2.2" opacity=".4" stroke-dasharray="4 5" d="M20 64 C42 62.5 70 65 100 63.5"/>
+  <!-- the cut -->
+  <path class="sc-ink sc-slit" stroke-width="2.8" pathLength="100" d="M20 64 C42 62.5 70 65 100 63.5"/>
+  <!-- scissors -->
+  <g transform="translate(24 64)">
+    <g class="sc-move">
+      <g class="sc-a">
+        <path class="sc-ink" stroke-width="2.6" d="M0 0 C7 -2 14 -3.2 20.5 -3.7"/>
+        <ellipse class="sc-ink" stroke-width="2.2" cx="-7.5" cy="4.6" rx="3.6" ry="2.9" transform="rotate(28 -7.5 4.6)"/>
+      </g>
+      <g class="sc-b">
+        <path class="sc-ink" stroke-width="2.6" d="M0 0 C7 2 14 3.2 20.5 3.7"/>
+        <ellipse class="sc-ink" stroke-width="2.2" cx="-7.5" cy="-4.6" rx="3.6" ry="2.9" transform="rotate(-28 -7.5 -4.6)"/>
+      </g>
+      <circle fill="var(--bello-accent, #3E7B4F)" cx="0" cy="0" r="1.9"/>
+    </g>
+  </g>
+</svg>

@@ -2,7 +2,7 @@
 
 Hand-drawn loading animations for thoughtful products.
 
-Twenty sketchy, ink-and-paper loaders — the kind you show while your product is writing, thinking,
+Thirty sketchy, ink-and-paper loaders — the kind you show while your product is writing, thinking,
 or brewing something for the user. Each one is a **single self-contained `.svg` file**: animation,
 easing, and reduced-motion handling baked in. No JavaScript, no CSS file, no dependencies.
 
@@ -36,6 +36,16 @@ python3 -m http.server 4173   # then visit http://localhost:4173
 | [`loaders/sprout.svg`](loaders/sprout.svg) | Sprout | "Growing the idea…" | drafts taking shape |
 | [`loaders/stack.svg`](loaders/stack.svg) | Stack | "Gathering sources…" | research, aggregation |
 | [`loaders/signal.svg`](loaders/signal.svg) | Signal | "Reaching the model…" | API / network calls |
+| [`loaders/scissors.svg`](loaders/scissors.svg) | Scissors | "Trimming it down…" | summarizing, condensing |
+| [`loaders/envelope.svg`](loaders/envelope.svg) | Envelope | "Sealing it up…" | sending, sharing |
+| [`loaders/dice.svg`](loaders/dice.svg) | Dice | "Rolling the options…" | sampling, brainstorming |
+| [`loaders/compass.svg`](loaders/compass.svg) | Compass | "Finding the way…" | planning, routing |
+| [`loaders/boat.svg`](loaders/boat.svg) | Boat | "Sailing along…" | steady background work |
+| [`loaders/hourglass.svg`](loaders/hourglass.svg) | Hourglass | "Counting the grains…" | queued / long waits |
+| [`loaders/constellation.svg`](loaders/constellation.svg) | Constellation | "Connecting the dots…" | linking ideas, graphs |
+| [`loaders/thread.svg`](loaders/thread.svg) | Thread | "Untangling the thread…" | debugging, resolving |
+| [`loaders/footprints.svg`](loaders/footprints.svg) | Footprints | "Step by step…" | agent steps, multi-stage runs |
+| [`loaders/mountain.svg`](loaders/mountain.svg) | Mountain | "Almost at the top…" | finishing long jobs |
 
 ## Use
 
@@ -50,10 +60,10 @@ properties with the defaults built in:
 
 ```css
 .my-loader {
-  --bello-ink: #211E1B;       /* line work */
-  --bello-accent: #C4502C;    /* the burnt-orange pop */
-  --bello-highlight: #F3BFA9; /* marker swipe */
-  --bello-paper: #FFFEFA;     /* fills (note page, plane body) */
+  --bello-ink: #1E2A21;       /* line work */
+  --bello-accent: #3E7B4F;    /* the leaf-green pop */
+  --bello-highlight: #C7E0C3; /* marker swipe */
+  --bello-paper: #FCFEFA;     /* fills (note page, plane body) */
 }
 ```
 
@@ -64,7 +74,7 @@ page won't collide. Size with `width`/`height` or CSS — everything is stroke-b
 ## Details
 
 - **Reduced motion:** the CSS-driven loaders render their finished, static frame under
-  `prefers-reduced-motion: reduce`. Quill and Plane animate via SMIL (for perfect
+  `prefers-reduced-motion: reduce`. Quill, Plane and Mountain animate via SMIL (for perfect
   motion-along-path); pause them with `svg.pauseAnimations()` if you need to.
 - **`<img>` vs inline:** Chromium only advances an SVG image's internal animation clock while
   the image is painted on screen. For a loader that's shown when it's needed, that's fine —

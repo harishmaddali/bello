@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Counting the grains">
+  <style>
+    .hg-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; stroke-linejoin: round; }
+    .hg-sand { fill: var(--bello-accent, #3E7B4F); opacity: .8; }
+    .hg-flip { transform-origin: 60px 58px; animation: hg-flip 4.4s ease-in-out infinite; }
+    @keyframes hg-flip {
+      0%, 80%   { transform: rotate(0deg); }
+      90%       { transform: rotate(187deg); }
+      94%       { transform: rotate(177.5deg); }
+      97%, 100% { transform: rotate(180deg); }
+    }
+    .hg-top { transform-origin: 60px 37.5px; animation: hg-top 4.4s linear infinite; }
+    @keyframes hg-top { 0%, 2% { transform: scaleY(1); } 74%, 100% { transform: scaleY(.12); } }
+    .hg-bot { transform-origin: 60px 78.5px; animation: hg-bot 4.4s linear infinite; }
+    @keyframes hg-bot { 0%, 2% { transform: scaleY(.12); } 74%, 100% { transform: scaleY(1); } }
+    .hg-stream {
+      stroke: var(--bello-accent, #3E7B4F); fill: none; stroke-width: 2.2; stroke-linecap: round;
+      stroke-dasharray: 1.5 4.5;
+      animation: hg-flow .6s linear infinite, hg-pour 4.4s linear infinite;
+    }
+    @keyframes hg-flow { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -24; } }
+    @keyframes hg-pour { 0%, 74% { opacity: 1; } 76%, 100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) {
+      .hg-flip, .hg-top, .hg-bot, .hg-stream { animation: none; }
+      .hg-top, .hg-bot { transform: scaleY(.5); }
+      .hg-stream { opacity: 1; }
+    }
+  </style>
+  <g class="hg-flip">
+    <path class="hg-sand hg-top" d="M52 37.5 Q60 46.5 68 37.5 Z"/>
+    <path class="hg-sand hg-bot" d="M51 78.5 Q60 69 69 78.5 Z"/>
+    <path class="hg-stream" d="M60 59 C60.1 65 60 71 60 77.5"/>
+    <path class="hg-ink" stroke-width="2.5"
+          d="M46 35 C55 36 65 36 74 35 C74.5 35.6 74.6 36.2 74.3 36.9 C69.5 46 64.5 51.5 61.5 58 C64.5 64.5 69.5 70 74.3 79.1 C74.6 79.8 74.5 80.4 74 81 C65 80 55 80 46 81 C45.5 80.4 45.4 79.8 45.7 79.1 C50.5 70 55.5 64.5 58.5 58 C55.5 51.5 50.5 46 45.7 36.9 C45.4 36.2 45.5 35.6 46 35 Z"/>
+    <path class="hg-ink" stroke-width="2.8" d="M43 33.5 C54 34.5 66 34.5 77 33.5"/>
+    <path class="hg-ink" stroke-width="2.8" d="M43 82.5 C54 81.5 66 81.5 77 82.5"/>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Finding the way">
+  <style>
+    .co-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .co-needle { transform-origin: 60px 60px; animation: co-swing 4.4s ease-in-out infinite; }
+    @keyframes co-swing {
+      0%        { transform: rotate(-38deg); }
+      9%        { transform: rotate(16deg); }
+      14%       { transform: rotate(2deg); }
+      19%       { transform: rotate(9deg); }
+      24%, 46%  { transform: rotate(7deg); }
+      55%       { transform: rotate(138deg); }
+      61%       { transform: rotate(124deg); }
+      67%, 90%  { transform: rotate(129deg); }
+      100%      { transform: rotate(-38deg); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .co-needle { animation: none; }
+    }
+  </style>
+  <path class="co-ink" stroke-width="2.8"
+        d="M60 38 C72.5 37.3 82.6 47.6 82 60.4 C81.4 72.7 71.3 82.4 59.4 81.8 C47.4 81.2 38 71.6 38.5 59.3 C39 47.6 48.6 38.6 60 38"/>
+  <path class="co-ink" stroke-width="2" opacity=".55" d="M60 42.5 C60 43.6 60 44.7 60.1 45.8"/>
+  <path class="co-ink" stroke-width="2" opacity=".55" d="M77.5 60.2 C76.4 60.2 75.3 60.2 74.2 60.1"/>
+  <path class="co-ink" stroke-width="2" opacity=".55" d="M59.9 77.5 C59.9 76.4 59.9 75.3 60 74.2"/>
+  <path class="co-ink" stroke-width="2" opacity=".55" d="M42.5 59.8 C43.6 59.9 44.7 59.9 45.8 59.9"/>
+  <g class="co-needle">
+    <path fill="var(--bello-accent, #3E7B4F)" d="M60 47 L63.2 60 L56.8 60 Z"/>
+    <path fill="var(--bello-paper, #FCFEFA)" stroke="var(--bello-ink, #1E2A21)" stroke-width="1.8" stroke-linejoin="round" d="M60 73 L63.2 60 L56.8 60 Z"/>
+  </g>
+  <circle fill="var(--bello-ink, #1E2A21)" cx="60" cy="60" r="2"/>
+</svg>

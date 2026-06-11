@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Almost at the top">
+  <style>
+    .mt-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+  </style>
+  <!-- peak -->
+  <path class="mt-ink" stroke-width="2.8" d="M22 84 C34 68 42 56 51 41 C54 36 59 33.5 62.5 39.5 C70.5 52 81 68 98 84"/>
+  <path class="mt-ink" stroke-width="2.2" opacity=".5" d="M18 85 C45 86.5 75 86 102 84.5"/>
+  <!-- switchback route -->
+  <path id="mt-route" class="mt-ink" stroke-width="2.4" opacity=".45" stroke-dasharray=".6 5.4"
+        d="M32 80 C42 76 38 68 47 64 C55 60.5 49 52 56.5 46.5 C58.5 45 59.3 43.5 59.8 41.5"/>
+  <g>
+    <animate attributeName="opacity" values="1;1;1;0;0" keyTimes="0;0.78;0.88;0.97;1" dur="4.4s" repeatCount="indefinite"/>
+    <!-- climber -->
+    <circle fill="var(--bello-accent, #3E7B4F)" r="2.8">
+      <animateMotion dur="4.4s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.66;1">
+        <mpath xlink:href="#mt-route" href="#mt-route"/>
+      </animateMotion>
+    </circle>
+    <!-- summit flag -->
+    <g transform="translate(59.8 40.5)">
+      <g>
+        <animateTransform attributeName="transform" type="scale" values="0;0;1.25;1;1" keyTimes="0;0.66;0.72;0.76;1" dur="4.4s" repeatCount="indefinite"/>
+        <path class="mt-ink" stroke-width="2" d="M0 0 C.2 -3 .1 -6 0 -9"/>
+        <path fill="var(--bello-accent, #3E7B4F)" d="M0 -9 C2.8 -8.4 5.6 -7.6 8.2 -6.8 C5.7 -5.6 3 -4.6 .3 -3.8 Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
