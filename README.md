@@ -6,7 +6,9 @@ Thirty sketchy, ink-and-paper loaders — the kind you show while your product i
 or brewing something for the user. Each one is a **single self-contained `.svg` file**: animation,
 easing, and reduced-motion handling baked in. No JavaScript, no CSS file, no dependencies.
 
-**Demo:** open [`index.html`](index.html) (serve the folder for the copy buttons to work):
+**Demo:** open [`index.html`](index.html) (serve the folder for the copy buttons to work).
+The header has six selectable themes — Moss, Ember, Indigo, Plum, Slate and a dark Midnight —
+which restyle the page and every loader live, since all color is CSS variables:
 
 ```sh
 python3 -m http.server 4173   # then visit http://localhost:4173
