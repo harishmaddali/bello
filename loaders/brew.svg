@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Steeping ideas">
+  <style>
+    .b-ink { stroke: var(--bello-ink, #211E1B); fill: none; stroke-linecap: round; }
+    .b-steam {
+      stroke: var(--bello-ink, #211E1B); fill: none; stroke-width: 2.6; stroke-linecap: round;
+      stroke-dasharray: 60 100;
+      animation: b-flow 3s linear infinite;
+    }
+    .b-st2 { animation-delay: -1.5s; opacity: .7; }
+    @keyframes b-flow { from { stroke-dashoffset: 60; } to { stroke-dashoffset: -100; } }
+    .b-sway { transform-box: fill-box; transform-origin: 50% 100%; animation: b-sway 3.2s ease-in-out infinite alternate; }
+    @keyframes b-sway { from { transform: rotate(-2.5deg); } to { transform: rotate(3deg); } }
+    @media (prefers-reduced-motion: reduce) {
+      .b-steam, .b-sway { animation: none; }
+      .b-steam { stroke-dasharray: none; }
+    }
+  </style>
+  <g class="b-sway">
+    <path class="b-steam" pathLength="100" d="M52 52 C45.5 44.5 57.5 38.5 51.5 30 C46.5 22.5 56 17 51 10"/>
+    <path class="b-steam b-st2" pathLength="100" d="M67 52 C73.5 44 62 38 68 30.5 C73.5 23 64.5 16.5 69.5 10.5"/>
+  </g>
+  <path class="b-ink" stroke-width="2.8" d="M35 60 C45 58.4 73 58.6 85 60.2"/>
+  <path class="b-ink" stroke-width="2.8" d="M35 60 C35.4 74 42 83.5 59 83.8 C75.5 84 83.8 74.5 84.8 60.4"/>
+  <path class="b-ink" stroke-width="2.6" d="M85 64.5 C95.5 62.5 97 74.5 84.5 77.5"/>
+  <path class="b-ink" stroke-width="2.8" d="M27 91.5 Q60 95.5 93 91.3"/>
+  <path class="b-ink" stroke-width="2" opacity=".5" d="M40 96 Q60 97.8 80 95.8"/>
+</svg>

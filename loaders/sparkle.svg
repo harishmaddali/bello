@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Adding the magic">
+  <style>
+    .s-ink { fill: var(--bello-ink, #211E1B); }
+    .s-acc { fill: var(--bello-accent, #C4502C); }
+    .s-star { transform-box: fill-box; transform-origin: 50% 50%; animation: s-tw 2.4s cubic-bezier(.4,.05,.35,1) infinite; }
+    .s-2 { animation-delay: .55s; }
+    .s-3 { animation-delay: 1.15s; }
+    @keyframes s-tw {
+      0%        { transform: scale(0) rotate(-30deg); opacity: 0; }
+      12%       { opacity: 1; }
+      20%       { transform: scale(1.15) rotate(0deg); }
+      30%       { transform: scale(1) rotate(2deg); opacity: 1; }
+      58%       { transform: scale(1.04) rotate(8deg); opacity: 1; }
+      74%, 100% { transform: scale(0) rotate(28deg); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .s-star { animation: none; transform: none; opacity: 1; }
+    }
+  </style>
+  <!-- hand-drawn four-point stars: concave diamonds with slight asymmetry -->
+  <g class="s-star s-1">
+    <path class="s-ink" transform="translate(45 49)"
+          d="M0 -13.5 C0.9 -5.5 4 -1.2 10 -0.3 C4.2 1.1 1 4.8 0.3 12.5 C-0.9 5 -4 1.2 -9.5 0.4 C-3.9 -1 -1 -5.2 0 -13.5 Z"/>
+  </g>
+  <g class="s-star s-2">
+    <path class="s-acc" transform="translate(78 33) scale(.74) rotate(9)"
+          d="M0 -13.5 C0.9 -5.5 4 -1.2 10 -0.3 C4.2 1.1 1 4.8 0.3 12.5 C-0.9 5 -4 1.2 -9.5 0.4 C-3.9 -1 -1 -5.2 0 -13.5 Z"/>
+  </g>
+  <g class="s-star s-3">
+    <path class="s-ink" transform="translate(71 78) scale(.5) rotate(-12)"
+          d="M0 -13.5 C0.9 -5.5 4 -1.2 10 -0.3 C4.2 1.1 1 4.8 0.3 12.5 C-0.9 5 -4 1.2 -9.5 0.4 C-3.9 -1 -1 -5.2 0 -13.5 Z"/>
+  </g>
+</svg>
