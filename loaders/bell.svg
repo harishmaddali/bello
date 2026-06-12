@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Ringing you back">
+  <style>
+    .be-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .be-bell { transform-origin: 60px 34px; animation: be-swing 2.8s ease-in-out infinite; }
+    @keyframes be-swing {
+      0%        { transform: rotate(0deg); }
+      8%        { transform: rotate(-14deg); }
+      20%       { transform: rotate(11deg); }
+      32%       { transform: rotate(-7deg); }
+      42%       { transform: rotate(4deg); }
+      52%, 100% { transform: rotate(0deg); }
+    }
+    .be-arc { stroke: var(--bello-accent, #3E7B4F); fill: none; stroke-width: 2.5; stroke-linecap: round;
+              transform-box: fill-box; transform-origin: 50% 50%; animation: be-a1 2.8s ease-out infinite; }
+    .be-a2 { animation-name: be-a2; }
+    @keyframes be-a1 {
+      0%, 5%    { transform: scale(.5); opacity: 0; }
+      12%       { transform: scale(1.1); opacity: 1; }
+      20%       { transform: scale(1); opacity: .9; }
+      34%, 100% { transform: scale(1.15); opacity: 0; }
+    }
+    @keyframes be-a2 {
+      0%, 13%   { transform: scale(.5); opacity: 0; }
+      20%       { transform: scale(1.1); opacity: 1; }
+      28%       { transform: scale(1); opacity: .9; }
+      42%, 100% { transform: scale(1.15); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .be-bell, .be-arc { animation: none; }
+      .be-arc { opacity: 0; }
+    }
+  </style>
+  <path class="be-arc be-a1" d="M36 48 C34.4 52 34.4 56.5 36 60.5"/>
+  <path class="be-arc be-a2" d="M84 48 C85.6 52 85.6 56.5 84 60.5"/>
+  <g class="be-bell">
+    <circle class="be-ink" stroke-width="2.2" cx="60" cy="33" r="2.4"/>
+    <path fill="var(--bello-paper, #FCFEFA)" stroke="var(--bello-ink, #1E2A21)" stroke-width="2.6" stroke-linejoin="round"
+          d="M60 36 C70 36.5 76 44 76.5 55 C76.8 60.5 78.5 63.5 81 66 C68 68.2 52 68.2 39 66 C41.5 63.5 43.2 60.5 43.5 55 C44 44 50 36.5 60 36 Z"/>
+    <path class="be-ink" stroke-width="2.2" d="M53 72.5 C57.5 73.6 62.5 73.6 67 72.5"/>
+    <circle fill="var(--bello-ink, #1E2A21)" cx="60" cy="72.8" r="2.6"/>
+  </g>
+</svg>

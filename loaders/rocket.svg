@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Launching it">
+  <style>
+    .ro-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .ro-body { fill: var(--bello-paper, #FCFEFA); stroke: var(--bello-ink, #1E2A21); stroke-width: 2.4; stroke-linejoin: round; }
+    .ro-fin { fill: var(--bello-accent, #3E7B4F); }
+    .ro-launch { animation: ro-launch 3.8s linear infinite; }
+    @keyframes ro-launch {
+      0%, 32%      { transform: translateY(0); opacity: 1; animation-timing-function: cubic-bezier(.62,0,.86,.4); }
+      56%          { transform: translateY(-82px); opacity: 1; }
+      56.1%, 99.9% { transform: translateY(-82px); opacity: 0; }
+      100%         { transform: translateY(0); opacity: 1; }
+    }
+    .ro-wiggle { animation: ro-wiggle .14s ease-in-out infinite alternate; }
+    @keyframes ro-wiggle { from { transform: translateX(-.8px); } to { transform: translateX(.8px); } }
+    .ro-flame { stroke: var(--bello-accent, #3E7B4F); fill: none; stroke-width: 2.8; stroke-linecap: round;
+                stroke-dasharray: 3 3; animation: ro-burn .35s linear infinite; }
+    @keyframes ro-burn { from { stroke-dashoffset: 0; } to { stroke-dashoffset: -12; } }
+    .ro-smoke { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-width: 2;
+                transform-box: fill-box; transform-origin: 50% 50%; animation: ro-s1 3.8s ease-out infinite; }
+    .ro-s2 { animation-name: ro-s2; }
+    @keyframes ro-s1 {
+      0%, 33%   { transform: scale(.2); opacity: 0; }
+      42%       { transform: scale(1); opacity: .4; }
+      58%, 100% { transform: scale(1.4); opacity: 0; }
+    }
+    @keyframes ro-s2 {
+      0%, 37%   { transform: scale(.2); opacity: 0; }
+      46%       { transform: scale(1); opacity: .35; }
+      62%, 100% { transform: scale(1.35); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .ro-launch, .ro-wiggle, .ro-flame, .ro-smoke { animation: none; }
+      .ro-launch, .ro-wiggle { transform: none; opacity: 1; }
+      .ro-smoke { opacity: 0; }
+    }
+  </style>
+  <!-- pad -->
+  <path class="ro-ink" stroke-width="2.4" d="M40 79 Q60 81.5 80 79"/>
+  <path class="ro-ink" stroke-width="2" opacity=".45" d="M48 84 Q60 85.8 72 84.2"/>
+  <!-- smoke puffs -->
+  <circle class="ro-smoke ro-s1" cx="51" cy="76" r="4"/>
+  <circle class="ro-smoke ro-s2" cx="69" cy="75.5" r="3.2"/>
+  <!-- rocket -->
+  <g class="ro-launch">
+    <g class="ro-wiggle">
+      <g transform="translate(60 56)">
+        <path class="ro-fin" d="M-7 -1.5 C-10.5 1 -12.3 4.5 -12.6 8 C-9.6 6.3 -7.2 5 -6.4 3.8 Z"/>
+        <path class="ro-fin" d="M7 -1.5 C10.5 1 12.3 4.5 12.6 8 C9.6 6.3 7.2 5 6.4 3.8 Z"/>
+        <path class="ro-body" d="M0 -22 C5 -16 7.5 -8 7 1 C4.5 2.2 -4.5 2.2 -7 1 C-7.5 -8 -5 -16 0 -22 Z"/>
+        <circle class="ro-ink" stroke-width="2" cx="0" cy="-8.5" r="3.1"/>
+        <path class="ro-ink" stroke-width="2" d="M-4 4.5 C-2 5.5 2 5.5 4 4.5"/>
+        <path class="ro-flame" d="M-2.5 7 C-2.7 9.5 -2.4 12 -2.2 14.5"/>
+        <path class="ro-flame" d="M2.4 8 C2.2 10.5 2.5 13 2.6 15.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

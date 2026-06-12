@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Pinning it down">
+  <style>
+    .pi-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .pi-map { fill: var(--bello-paper, #FCFEFA); stroke: var(--bello-ink, #1E2A21); stroke-width: 2.4; stroke-linejoin: round; }
+    .pi-drop { animation: pi-drop 3.8s cubic-bezier(.55,.05,.6,1) infinite; }
+    @keyframes pi-drop {
+      0%, 8%    { transform: translateY(-36px); opacity: 0; }
+      12%       { opacity: 1; }
+      22%       { transform: translateY(2px); opacity: 1; }
+      28%       { transform: translateY(-2.5px); }
+      33%, 100% { transform: translateY(0); }
+    }
+    .pi-rip { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-width: 2;
+              transform-origin: 60px 66px; animation: pi-rip 3.8s ease-out infinite; }
+    @keyframes pi-rip {
+      0%, 21%   { transform: scale(.3); opacity: 0; }
+      27%       { opacity: .55; }
+      48%, 100% { transform: scale(1.5); opacity: 0; }
+    }
+    .pi-fade { animation: pi-fade 3.8s linear infinite; }
+    @keyframes pi-fade { 0%, 84% { opacity: 1; } 94%, 99.9% { opacity: 0; } 100% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) {
+      .pi-drop, .pi-rip, .pi-fade { animation: none; }
+      .pi-drop { transform: none; opacity: 1; }
+      .pi-rip { opacity: 0; }
+    }
+  </style>
+  <path class="pi-map" d="M28 46 C46 44.5 74 44.8 92 46 C93.2 58 93 72 92.2 84 C72 85.6 46 85.4 28.8 84.2 C27.6 72 27.8 58 28 46 Z"/>
+  <path class="pi-ink" stroke-width="2" opacity=".4" d="M49 45.5 C48.6 58 48.8 72 49.2 84.6"/>
+  <path class="pi-ink" stroke-width="2" opacity=".4" d="M70.5 45.3 C70.9 58 70.7 72 70.3 84.4"/>
+  <g class="pi-fade">
+    <ellipse class="pi-rip" cx="60" cy="66" rx="8.5" ry="3"/>
+    <g transform="translate(60 64)">
+      <g class="pi-drop">
+        <path fill="var(--bello-accent, #3E7B4F)"
+              d="M0 0 C-4.5 -7 -6.5 -10.5 -6.5 -14.5 C-6.5 -19 -3.5 -22 0.2 -22 C4 -22 7 -19 6.8 -14.4 C6.7 -10.5 4.5 -7 0 0 Z"/>
+        <circle fill="var(--bello-paper, #FCFEFA)" cx="0.1" cy="-15" r="2.4"/>
+      </g>
+    </g>
+  </g>
+</svg>

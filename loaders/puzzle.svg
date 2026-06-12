@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Fitting the pieces">
+  <style>
+    .pz-piece { fill: var(--bello-paper, #FCFEFA); stroke: var(--bello-ink, #1E2A21); stroke-width: 2.4; stroke-linejoin: round; }
+    .pz-l { animation: pz-l 3.8s cubic-bezier(.5,.05,.45,1) infinite; }
+    .pz-r { animation: pz-r 3.8s cubic-bezier(.5,.05,.45,1) infinite; }
+    @keyframes pz-l {
+      0%, 6%   { transform: translateX(-15px); }
+      26%      { transform: translateX(1.2px); }
+      31%, 100%{ transform: translateX(0); }
+    }
+    @keyframes pz-r {
+      0%, 6%   { transform: translateX(15px); }
+      26%      { transform: translateX(-1.2px); }
+      31%, 100%{ transform: translateX(0); }
+    }
+    .pz-click { transform-origin: 60px 60px; animation: pz-click 3.8s ease-out infinite; }
+    @keyframes pz-click {
+      0%, 26%   { transform: scale(1); }
+      30%       { transform: scale(1.045, .95); }
+      35%, 100% { transform: scale(1); }
+    }
+    .pz-star { stroke: var(--bello-accent, #3E7B4F); fill: none; stroke-width: 2.6; stroke-linecap: round;
+               transform-box: fill-box; transform-origin: 50% 50%; animation: pz-star 3.8s cubic-bezier(.4,.05,.35,1.2) infinite; }
+    @keyframes pz-star {
+      0%, 30%   { transform: scale(0) rotate(-20deg); opacity: 0; }
+      37%       { transform: scale(1.2) rotate(0deg); opacity: 1; }
+      42%, 70%  { transform: scale(1); opacity: 1; }
+      80%, 100% { transform: scale(.4); opacity: 0; }
+    }
+    .pz-fade { animation: pz-fade 3.8s linear infinite; }
+    @keyframes pz-fade { 0%, 84% { opacity: 1; } 94%, 99.9% { opacity: 0; } 100% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) {
+      .pz-l, .pz-r, .pz-click, .pz-star, .pz-fade { animation: none; }
+      .pz-l, .pz-r { transform: none; }
+      .pz-star { opacity: 0; }
+    }
+  </style>
+  <g class="pz-fade">
+    <g class="pz-click">
+      <g class="pz-l">
+        <path class="pz-piece" d="M37 49 C44 48.2 52 48.2 59 48.6 C59.2 51.4 59.3 54.3 59.4 57 C62.8 56 65.5 57.8 65.4 60.4 C65.3 63 62.6 64.6 59.5 63.6 C59.5 66.4 59.4 69.2 59.2 71.6 C51.5 72.3 44 72.2 37.6 71.5 C36.8 64 36.8 56.4 37 49 Z"/>
+      </g>
+      <g class="pz-r">
+        <path class="pz-piece" d="M61.5 48.7 C68.5 48.2 76 48.4 82.6 49 C83.4 56.4 83.3 64 82.8 71.4 C75.5 72.2 68.5 72 61.7 71.5 C61.65 68.8 61.6 66.2 61.6 63.6 C64.6 64.5 67.3 62.8 67.2 60.3 C67.1 57.9 64.5 56.3 61.6 57.1 C61.55 54.3 61.5 51.5 61.5 48.7 Z"/>
+      </g>
+    </g>
+    <g class="pz-star">
+      <path d="M60 36 Q59.7 40.5 60 45"/>
+      <path d="M55.5 40.5 Q60 40.2 64.5 40.5"/>
+    </g>
+  </g>
+</svg>

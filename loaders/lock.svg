@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Unlocking access">
+  <style>
+    .lk-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .lk-body { fill: var(--bello-paper, #FCFEFA); stroke: var(--bello-ink, #1E2A21); stroke-width: 2.6; stroke-linejoin: round; }
+    .lk-shackle { transform-origin: 49px 54px; animation: lk-open 3.6s ease-in-out infinite; }
+    @keyframes lk-open {
+      0%, 40%   { transform: translateY(0) rotate(0deg); }
+      46%       { transform: translateY(-7px) rotate(0deg); }
+      53%       { transform: translateY(-7px) rotate(-26deg); }
+      57%       { transform: translateY(-7px) rotate(-19deg); }
+      60%, 78%  { transform: translateY(-7px) rotate(-22deg); }
+      85%       { transform: translateY(-7px) rotate(0deg); }
+      91%, 100% { transform: translateY(0) rotate(0deg); }
+    }
+    .lk-tick { stroke: var(--bello-accent, #3E7B4F); fill: none; stroke-width: 2.6; stroke-linecap: round;
+               transform-box: fill-box; transform-origin: 50% 50%; animation: lk-tick 3.6s cubic-bezier(.4,.05,.35,1.2) infinite; }
+    .lk-t2 { animation-delay: .07s; }
+    @keyframes lk-tick {
+      0%, 52%   { transform: scale(0); opacity: 0; }
+      58%       { transform: scale(1.2); opacity: 1; }
+      62%, 72%  { transform: scale(1); opacity: 1; }
+      80%, 100% { transform: scale(.4); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .lk-shackle, .lk-tick { animation: none; }
+      .lk-tick { opacity: 0; }
+    }
+  </style>
+  <path class="lk-ink lk-shackle" stroke-width="2.8" d="M49 54 C48 42.5 53 35.5 60 35.5 C67 35.5 72 42.5 71 54"/>
+  <path class="lk-body" d="M44 54 C54 52.8 67 53 76 54 C77.4 54.2 78 55.1 78 56.5 C78.6 65 78.4 74 77.6 81.8 C66 83.2 53 83 43.4 82 C42 74 42.2 64 42.6 56.2 C42.7 55 43.1 54.2 44 54 Z"/>
+  <circle fill="var(--bello-ink, #1E2A21)" cx="60" cy="65.5" r="3"/>
+  <path class="lk-ink" stroke-width="2.6" d="M60 67.5 C59.9 69.5 59.8 71.5 59.6 73.5"/>
+  <path class="lk-tick" d="M77 38.5 C78.3 37 79.7 35.6 81.2 34.2"/>
+  <path class="lk-tick lk-t2" d="M81.5 45.5 C83.4 44.9 85.3 44.2 87.2 43.4"/>
+</svg>

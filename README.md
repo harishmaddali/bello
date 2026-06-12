@@ -2,7 +2,7 @@
 
 Hand-drawn loading animations for thoughtful products.
 
-Thirty sketchy, ink-and-paper loaders — the kind you show while your product is writing, thinking,
+Forty sketchy, ink-and-paper loaders — the kind you show while your product is writing, thinking,
 or brewing something for the user. Each one is a **single self-contained `.svg` file**: animation,
 easing, and reduced-motion handling baked in. No JavaScript, no CSS file, no dependencies.
 
@@ -48,6 +48,16 @@ python3 -m http.server 4173   # then visit http://localhost:4173
 | [`loaders/thread.svg`](loaders/thread.svg) | Thread | "Untangling the thread…" | debugging, resolving |
 | [`loaders/footprints.svg`](loaders/footprints.svg) | Footprints | "Step by step…" | agent steps, multi-stage runs |
 | [`loaders/mountain.svg`](loaders/mountain.svg) | Mountain | "Almost at the top…" | finishing long jobs |
+| [`loaders/lock.svg`](loaders/lock.svg) | Lock | "Unlocking access…" | auth, permissions |
+| [`loaders/calendar.svg`](loaders/calendar.svg) | Calendar | "Finding a time…" | scheduling |
+| [`loaders/funnel.svg`](loaders/funnel.svg) | Funnel | "Sifting it down…" | filtering, ranking |
+| [`loaders/pin.svg`](loaders/pin.svg) | Pin | "Pinning it down…" | locating, matching |
+| [`loaders/radar.svg`](loaders/radar.svg) | Radar | "Scanning for it…" | monitoring, watching |
+| [`loaders/shield.svg`](loaders/shield.svg) | Shield | "Checking it's safe…" | safety & moderation checks |
+| [`loaders/puzzle.svg`](loaders/puzzle.svg) | Puzzle | "Fitting the pieces…" | integrations, assembly |
+| [`loaders/rocket.svg`](loaders/rocket.svg) | Rocket | "Launching it…" | deploys, shipping |
+| [`loaders/book.svg`](loaders/book.svg) | Book | "Reading it through…" | reading docs, RAG |
+| [`loaders/bell.svg`](loaders/bell.svg) | Bell | "Ringing you back…" | notifications |
 
 ## Use
 

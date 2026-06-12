@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Sifting it down">
+  <style>
+    .fu-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .fu-dot { fill: var(--bello-ink, #1E2A21); }
+    .fu-f1 { animation: fu-f1 1.9s ease-in infinite; }
+    .fu-f2 { animation: fu-f2 1.9s ease-in infinite; animation-delay: -.63s; }
+    .fu-f3 { animation: fu-f3 1.9s ease-in infinite; animation-delay: -1.27s; }
+    @keyframes fu-f1 {
+      0%   { transform: translate(-9px, -16px); opacity: 0; }
+      18%  { opacity: 1; }
+      55%  { transform: translate(0, 0); opacity: 1; }
+      64%, 100% { transform: translate(0, 2px); opacity: 0; }
+    }
+    @keyframes fu-f2 {
+      0%   { transform: translate(0, -18px); opacity: 0; }
+      18%  { opacity: 1; }
+      55%  { transform: translate(0, 0); opacity: 1; }
+      64%, 100% { transform: translate(0, 2px); opacity: 0; }
+    }
+    @keyframes fu-f3 {
+      0%   { transform: translate(9px, -16px); opacity: 0; }
+      18%  { opacity: 1; }
+      55%  { transform: translate(0, 0); opacity: 1; }
+      64%, 100% { transform: translate(0, 2px); opacity: 0; }
+    }
+    .fu-drip { fill: var(--bello-accent, #3E7B4F); animation: fu-drip 1.9s linear infinite; }
+    @keyframes fu-drip {
+      0%, 30% { transform: translate(0, -7px) scale(.5); opacity: 0; }
+      42%     { transform: translate(0, -3px) scale(1); opacity: 1; }
+      70%     { transform: translate(0, 7px); opacity: 1; }
+      84%, 100% { transform: translate(0, 11px); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .fu-f1, .fu-f2, .fu-f3, .fu-drip { animation: none; }
+      .fu-f1, .fu-f3 { opacity: 0; }
+      .fu-f2 { transform: translate(0, -10px); opacity: 1; }
+      .fu-drip { transform: none; opacity: 1; }
+    }
+  </style>
+  <!-- funnel -->
+  <path class="fu-ink" stroke-width="2.6" d="M34 42 C48 40.8 72 40.8 86 42"/>
+  <path class="fu-ink" stroke-width="2.6" d="M34 42 C44 52.5 52.5 58.5 56.5 63 C56.8 67.8 56.8 72.2 56.6 76.5"/>
+  <path class="fu-ink" stroke-width="2.6" d="M86 42 C76 52.5 67.5 58.5 65.5 63 C65.2 67.8 65.2 72.2 65.4 76.5"/>
+  <!-- bits falling in -->
+  <circle class="fu-dot fu-f1" cx="56" cy="50" r="2.2"/>
+  <circle class="fu-dot fu-f2" cx="60.5" cy="51.5" r="1.9"/>
+  <circle class="fu-dot fu-f3" cx="65" cy="49.5" r="2.1"/>
+  <!-- the one that makes it through -->
+  <circle class="fu-drip" cx="61" cy="83" r="2.6"/>
+</svg>

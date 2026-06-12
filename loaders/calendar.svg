@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Finding a time">
+  <style>
+    .ca-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .ca-page { fill: var(--bello-paper, #FCFEFA); stroke: var(--bello-ink, #1E2A21); stroke-width: 2.6; stroke-linejoin: round; }
+    .ca-dot { fill: var(--bello-ink, #1E2A21); }
+    .ca-row { animation: ca-row 4.2s ease-out infinite; }
+    .ca-r2 { animation-name: ca-row2; }
+    .ca-r3 { animation-name: ca-row3; }
+    @keyframes ca-row  { 0%, 8%  { transform: translateY(3px); opacity: 0; } 15%, 100% { transform: translateY(0); opacity: 1; } }
+    @keyframes ca-row2 { 0%, 16% { transform: translateY(3px); opacity: 0; } 23%, 100% { transform: translateY(0); opacity: 1; } }
+    @keyframes ca-row3 { 0%, 24% { transform: translateY(3px); opacity: 0; } 31%, 100% { transform: translateY(0); opacity: 1; } }
+    .ca-ring {
+      stroke: var(--bello-accent, #3E7B4F); fill: none; stroke-width: 2.6; stroke-linecap: round;
+      stroke-dasharray: 100 150; stroke-dashoffset: 101;
+      animation: ca-ring 4.2s linear infinite;
+    }
+    @keyframes ca-ring { 0%, 52% { stroke-dashoffset: 101; } 66%, 100% { stroke-dashoffset: 0; } }
+    .ca-fade { animation: ca-fade 4.2s linear infinite; }
+    @keyframes ca-fade { 0%, 86% { opacity: 1; } 95%, 99.9% { opacity: 0; } 100% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) {
+      .ca-row, .ca-r2, .ca-r3, .ca-ring, .ca-fade { animation: none; }
+      .ca-row { transform: none; opacity: 1; }
+      .ca-ring { stroke-dasharray: none; stroke-dashoffset: 0; }
+    }
+  </style>
+  <path class="ca-page" d="M36 38 C50 36.8 70 37 84 38 C85.2 52 85 68 84.2 82 C68 83.4 50 83.2 36.6 82.2 C35.4 68 35.6 52 36 38 Z"/>
+  <path class="ca-ink" stroke-width="2.2" opacity=".7" d="M36.5 49 C52 48 68 48.3 83.5 49"/>
+  <path class="ca-ink" stroke-width="2.6" d="M46 33 C46 35.1 46 37.2 46.2 39.5"/>
+  <path class="ca-ink" stroke-width="2.6" d="M74 33 C74 35.1 74 37.2 74.2 39.5"/>
+  <g class="ca-fade">
+    <g class="ca-row ca-r1">
+      <circle class="ca-dot" cx="45" cy="57.5" r="1.9"/><circle class="ca-dot" cx="55" cy="57.3" r="1.9"/>
+      <circle class="ca-dot" cx="65" cy="57.6" r="1.9"/><circle class="ca-dot" cx="75" cy="57.4" r="1.9"/>
+    </g>
+    <g class="ca-row ca-r2">
+      <circle class="ca-dot" cx="45" cy="66.6" r="1.9"/><circle class="ca-dot" cx="55" cy="66.4" r="1.9"/>
+      <circle class="ca-dot" cx="65" cy="66.5" r="1.9"/><circle class="ca-dot" cx="75" cy="66.3" r="1.9"/>
+    </g>
+    <g class="ca-row ca-r3">
+      <circle class="ca-dot" cx="45" cy="75.6" r="1.9"/><circle class="ca-dot" cx="55" cy="75.4" r="1.9"/>
+      <circle class="ca-dot" cx="65" cy="75.5" r="1.9"/>
+    </g>
+    <path class="ca-ring" pathLength="100"
+          d="M65 60.2 C69.8 60.8 72.3 63.6 71.8 67 C71.2 70.8 67 72.8 63.2 71.6 C59.6 70.5 58.2 67 59.6 64 C60.7 61.7 62.6 60 65 60.2"/>
+  </g>
+</svg>
