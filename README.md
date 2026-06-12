@@ -2,7 +2,7 @@
 
 Hand-drawn loading animations for thoughtful products.
 
-Forty sketchy, ink-and-paper loaders — the kind you show while your product is writing, thinking,
+Forty-one sketchy, ink-and-paper loaders — the kind you show while your product is writing, thinking,
 or brewing something for the user. Each one is a **single self-contained `.svg` file**: animation,
 easing, and reduced-motion handling baked in. No JavaScript, no CSS file, no dependencies.
 
@@ -58,6 +58,7 @@ python3 -m http.server 4173   # then visit http://localhost:4173
 | [`loaders/rocket.svg`](loaders/rocket.svg) | Rocket | "Launching it…" | deploys, shipping |
 | [`loaders/book.svg`](loaders/book.svg) | Book | "Reading it through…" | reading docs, RAG |
 | [`loaders/bell.svg`](loaders/bell.svg) | Bell | "Ringing you back…" | notifications |
+| [`loaders/rubik.svg`](loaders/rubik.svg) | Rubik | "Twisting it into place…" | organizing, solving |
 
 ## Use
 

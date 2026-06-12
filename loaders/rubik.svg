@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Twisting it into place">
+  <style>
+    .ru-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .ru-grid { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-width: 1.8; stroke-linecap: round; opacity: .75; }
+    .ru-sticker { fill: var(--bello-accent, #3E7B4F); opacity: .85; }
+    /* sticker patterns swap right after each twist of the cube */
+    .ru-a { animation: ru-a 4.2s linear infinite; }
+    .ru-b { animation: ru-b 4.2s linear infinite; }
+    .ru-c { animation: ru-c 4.2s linear infinite; }
+    .ru-s { animation: ru-s 4.2s linear infinite; }
+    @keyframes ru-a { 0%, 19.9% { opacity: 1; } 20%, 100% { opacity: 0; } }
+    @keyframes ru-b { 0%, 19.9% { opacity: 0; } 20%, 39.9% { opacity: 1; } 40%, 100% { opacity: 0; } }
+    @keyframes ru-c { 0%, 39.9% { opacity: 0; } 40%, 59.9% { opacity: 1; } 60%, 100% { opacity: 0; } }
+    @keyframes ru-s { 0%, 59.9% { opacity: 0; } 60%, 100% { opacity: 1; } }
+    .ru-twist { transform-origin: 60px 58px; animation: ru-twist 4.2s ease-in-out infinite; }
+    @keyframes ru-twist {
+      0%, 15%   { transform: rotate(0deg) scale(1); }
+      18%       { transform: rotate(-4.5deg); }
+      21%       { transform: rotate(1deg); }
+      24%, 35%  { transform: rotate(0deg); }
+      38%       { transform: rotate(4.5deg); }
+      41%       { transform: rotate(-1deg); }
+      44%, 55%  { transform: rotate(0deg); }
+      58%       { transform: rotate(-3.5deg); }
+      62%       { transform: rotate(0.8deg) scale(1.05); }
+      67%, 100% { transform: rotate(0deg) scale(1); }
+    }
+    .ru-tick { stroke: var(--bello-accent, #3E7B4F); fill: none; stroke-width: 2.6; stroke-linecap: round;
+               transform-box: fill-box; transform-origin: 50% 50%; animation: ru-tick 4.2s cubic-bezier(.4,.05,.35,1.2) infinite; }
+    .ru-t2 { animation-delay: .06s; }
+    @keyframes ru-tick {
+      0%, 61%   { transform: scale(0); opacity: 0; }
+      66%       { transform: scale(1.2); opacity: 1; }
+      70%, 80%  { transform: scale(1); opacity: 1; }
+      88%, 100% { transform: scale(.4); opacity: 0; }
+    }
+    .ru-fade { animation: ru-fade 4.2s linear infinite; }
+    @keyframes ru-fade { 0%, 86% { opacity: 1; } 95%, 99.9% { opacity: 0; } 100% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) {
+      .ru-a, .ru-b, .ru-c, .ru-s, .ru-twist, .ru-tick, .ru-fade { animation: none; }
+      .ru-a, .ru-b, .ru-c { opacity: 0; }
+      .ru-s { opacity: 1; }
+      .ru-tick { opacity: 0; }
+    }
+  </style>
+  <g class="ru-fade">
+    <g class="ru-twist">
+      <!-- cube body -->
+      <path fill="var(--bello-paper, #FCFEFA)" stroke="var(--bello-ink, #1E2A21)" stroke-width="2.6" stroke-linejoin="round"
+            d="M60 34 C67.5 37.6 75 41.3 82 45 C82.3 53.7 82.2 62.4 82 71 C74.7 74.8 67.3 78.4 60 82 C52.7 78.4 45.3 74.8 38 71 C37.8 62.4 37.7 53.7 38 45 C45 41.3 52.5 37.6 60 34 Z"/>
+      <!-- sticker patterns: scattered, then converging, then solved -->
+      <g class="ru-a">
+        <path class="ru-sticker" d="M74.7 41.3 L82 45 L74.7 48.7 L67.3 45 Z"/>
+        <path class="ru-sticker" d="M45.3 57.3 L52.7 61 L52.7 69.7 L45.3 66 Z"/>
+        <path class="ru-sticker" d="M67.3 69.7 L74.7 66 L74.7 74.7 L67.3 78.3 Z"/>
+        <path class="ru-sticker" d="M38 45 L45.3 48.7 L45.3 57.3 L38 53.7 Z"/>
+      </g>
+      <g class="ru-b">
+        <path class="ru-sticker" d="M60 34 L67.3 37.7 L60 41.3 L52.7 37.7 Z"/>
+        <path class="ru-sticker" d="M60 48.7 L67.3 52.3 L60 56 L52.7 52.3 Z"/>
+        <path class="ru-sticker" d="M74.7 57.3 L82 53.7 L82 62.3 L74.7 66 Z"/>
+        <path class="ru-sticker" d="M52.7 52.3 L60 56 L60 64.7 L52.7 61 Z"/>
+      </g>
+      <g class="ru-c">
+        <path class="ru-sticker" d="M60 41.3 L67.3 45 L60 48.7 L52.7 45 Z"/>
+        <path class="ru-sticker" d="M45.3 41.3 L52.7 45 L45.3 48.7 L38 45 Z"/>
+        <path class="ru-sticker" d="M74.7 41.3 L82 45 L74.7 48.7 L67.3 45 Z"/>
+        <path class="ru-sticker" d="M60 56 L67.3 52.3 L67.3 61 L60 64.7 Z"/>
+      </g>
+      <g class="ru-s">
+        <path class="ru-sticker" d="M60 34 L82 45 L60 56 L38 45 Z"/>
+      </g>
+      <!-- internal edges -->
+      <path class="ru-ink" stroke-width="2.4" d="M38 45 C45.3 48.7 52.7 52.3 60 56"/>
+      <path class="ru-ink" stroke-width="2.4" d="M60 56 C67.3 52.3 74.7 48.7 82 45"/>
+      <path class="ru-ink" stroke-width="2.4" d="M60 56 C60.1 64.7 60 73.3 60 82"/>
+      <!-- top face grid -->
+      <path class="ru-grid" d="M67.3 37.7 C60 41.3 52.7 45 45.3 48.7"/>
+      <path class="ru-grid" d="M74.7 41.3 C67.3 45 60 48.7 52.7 52.3"/>
+      <path class="ru-grid" d="M52.7 37.7 C60 41.4 67.3 45 74.7 48.7"/>
+      <path class="ru-grid" d="M45.3 41.3 C52.7 45 60 48.6 67.3 52.3"/>
+      <!-- front-left grid -->
+      <path class="ru-grid" d="M45.3 48.7 C45.2 57.3 45.4 66 45.3 74.7"/>
+      <path class="ru-grid" d="M52.7 52.3 C52.6 61 52.7 69.7 52.7 78.3"/>
+      <path class="ru-grid" d="M38 53.7 C45.3 57.3 52.7 61 60 64.7"/>
+      <path class="ru-grid" d="M38 62.3 C45.3 66 52.7 69.7 60 73.3"/>
+      <!-- front-right grid -->
+      <path class="ru-grid" d="M67.3 52.3 C67.4 61 67.3 69.7 67.3 78.3"/>
+      <path class="ru-grid" d="M74.7 48.7 C74.7 57.3 74.8 66 74.7 74.7"/>
+      <path class="ru-grid" d="M60 64.7 C67.3 61 74.7 57.3 82 53.7"/>
+      <path class="ru-grid" d="M60 73.3 C67.3 69.7 74.7 66 82 62.3"/>
+    </g>
+    <!-- solved! -->
+    <path class="ru-tick" d="M87 33 C88.5 31.4 90 29.8 91.4 28.1"/>
+    <path class="ru-tick ru-t2" d="M91 40 C93 39.3 95 38.5 96.9 37.6"/>
+  </g>
+</svg>
