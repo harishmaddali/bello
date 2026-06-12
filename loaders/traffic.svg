@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Waiting for green">
+  <style>
+    .tl-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .tl-red { fill: var(--bello-ink, #1E2A21); opacity: 0; animation: tl-red 3.9s linear infinite; }
+    @keyframes tl-red { 0%, 29.9% { opacity: .55; } 30%, 100% { opacity: .12; } }
+    .tl-amber { fill: var(--bello-ink, #1E2A21); animation: tl-amber 3.9s linear infinite; }
+    @keyframes tl-amber { 0%, 29.9% { opacity: .12; } 30%, 55.9% { opacity: .38; } 56%, 100% { opacity: .12; } }
+    .tl-green { fill: var(--bello-accent, #3E7B4F); transform-box: fill-box; transform-origin: 50% 50%; animation: tl-green 3.9s cubic-bezier(.4,.05,.35,1.2) infinite; }
+    @keyframes tl-green {
+      0%, 55.9% { opacity: .12; transform: scale(.85); }
+      60%       { opacity: 1; transform: scale(1.2); }
+      64%, 100% { opacity: 1; transform: scale(1); }
+    }
+    .tl-ring { stroke: var(--bello-accent, #3E7B4F); fill: none; stroke-width: 2;
+               transform-origin: 60px 70px; animation: tl-ring 3.9s ease-out infinite; }
+    @keyframes tl-ring {
+      0%, 57%   { transform: scale(.5); opacity: 0; }
+      63%       { opacity: .7; }
+      78%, 100% { transform: scale(1.45); opacity: 0; }
+    }
+    .tl-fade { animation: tl-fade 3.9s linear infinite; }
+    @keyframes tl-fade { 0%, 88% { opacity: 1; } 96%, 99.9% { opacity: 0; } 100% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) {
+      .tl-red, .tl-amber, .tl-green, .tl-ring, .tl-fade { animation: none; }
+      .tl-red, .tl-amber { opacity: .12; }
+      .tl-green { opacity: 1; transform: none; }
+      .tl-ring { opacity: 0; }
+    }
+  </style>
+  <path class="tl-ink" stroke-width="2.4" d="M60 81 C60.2 84 60.1 87 60 90"/>
+  <path fill="var(--bello-paper, #FCFEFA)" stroke="var(--bello-ink, #1E2A21)" stroke-width="2.5" stroke-linejoin="round"
+        d="M50 34 C56.5 33 63.5 33 70 34 C71.2 49 71 65 70.2 80 C63.5 81 56.5 81 49.8 80 C49 65 48.8 49 50 34 Z"/>
+  <g class="tl-fade">
+    <circle class="tl-ink" stroke-width="2.1" cx="60" cy="44.5" r="5.3"/>
+    <circle class="tl-ink" stroke-width="2.1" cx="60.2" cy="57.5" r="5.5"/>
+    <circle class="tl-ink" stroke-width="2.1" cx="59.9" cy="70.5" r="5.4"/>
+    <circle class="tl-red" cx="60" cy="44.5" r="3.9"/>
+    <circle class="tl-amber" cx="60.2" cy="57.5" r="4"/>
+    <circle class="tl-green" cx="59.9" cy="70.5" r="4.1"/>
+    <circle class="tl-ring" cx="59.9" cy="70.5" r="7.6"/>
+  </g>
+</svg>

@@ -2,7 +2,7 @@
 
 Hand-drawn loading animations for thoughtful products.
 
-Forty-one sketchy, ink-and-paper loaders — the kind you show while your product is writing, thinking,
+Fifty-one sketchy, ink-and-paper loaders — the kind you show while your product is writing, thinking,
 or brewing something for the user. Each one is a **single self-contained `.svg` file**: animation,
 easing, and reduced-motion handling baked in. No JavaScript, no CSS file, no dependencies.
 
@@ -59,6 +59,16 @@ python3 -m http.server 4173   # then visit http://localhost:4173
 | [`loaders/book.svg`](loaders/book.svg) | Book | "Reading it through…" | reading docs, RAG |
 | [`loaders/bell.svg`](loaders/bell.svg) | Bell | "Ringing you back…" | notifications |
 | [`loaders/rubik.svg`](loaders/rubik.svg) | Rubik | "Twisting it into place…" | organizing, solving |
+| [`loaders/typewriter.svg`](loaders/typewriter.svg) | Typewriter | "Typing it up…" | drafting, transcribing |
+| [`loaders/inkpot.svg`](loaders/inkpot.svg) | Inkpot | "Dipping the pen…" | starting to write |
+| [`loaders/telescope.svg`](loaders/telescope.svg) | Telescope | "Scanning the stars…" | discovery, exploration |
+| [`loaders/kite.svg`](loaders/kite.svg) | Kite | "Catching the breeze…" | playful waits |
+| [`loaders/abacus.svg`](loaders/abacus.svg) | Abacus | "Crunching the numbers…" | calculations, analytics |
+| [`loaders/campfire.svg`](loaders/campfire.svg) | Campfire | "Keeping it warm…" | keep-alive, sessions |
+| [`loaders/metronome.svg`](loaders/metronome.svg) | Metronome | "Keeping the beat…" | steady background work |
+| [`loaders/battery.svg`](loaders/battery.svg) | Battery | "Charging it up…" | provisioning, warm-up |
+| [`loaders/origami.svg`](loaders/origami.svg) | Origami | "Folding it neatly…" | formatting, packaging |
+| [`loaders/traffic.svg`](loaders/traffic.svg) | Traffic | "Waiting for green…" | approvals, gating |
 
 ## Use
 

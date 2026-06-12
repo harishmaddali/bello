@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Catching the breeze">
+  <style>
+    .ki-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .ki-sail { fill: var(--bello-paper, #FCFEFA); stroke: var(--bello-ink, #1E2A21); stroke-width: 2.4; stroke-linejoin: round; }
+    .ki-bow { stroke: var(--bello-accent, #3E7B4F); fill: none; stroke-width: 1.8; stroke-linecap: round; }
+    .ki-drift { transform-origin: 28px 86px; animation: ki-drift 3.2s ease-in-out infinite alternate; }
+    @keyframes ki-drift { from { transform: rotate(-2.5deg); } to { transform: rotate(3deg); } }
+    .ki-sway { transform-origin: 64px 42px; animation: ki-sway 1.7s ease-in-out infinite alternate; }
+    @keyframes ki-sway { from { transform: rotate(-5deg); } to { transform: rotate(5deg); } }
+    @media (prefers-reduced-motion: reduce) {
+      .ki-drift, .ki-sway { animation: none; }
+    }
+  </style>
+  <g class="ki-drift">
+    <path class="ki-ink" stroke-width="1.8" opacity=".65" d="M28 86 C40 74 50 60 60.5 50"/>
+    <g class="ki-sway">
+      <path class="ki-sail" d="M64 26 C68.5 31 72 36.5 75 42 C71 47.5 67.5 52.5 64.5 58 C60 52.5 56.5 47 54 42 C57 36.5 60.5 31 64 26 Z"/>
+      <path class="ki-ink" stroke-width="1.6" opacity=".5" d="M64 26 C64.2 37 64.4 47 64.5 58"/>
+      <path class="ki-ink" stroke-width="1.6" opacity=".5" d="M54 42 C61 42.2 68 42.1 75 42"/>
+      <path class="ki-ink" stroke-width="1.8" d="M64.5 58 C63 64 66 68 64 73 C62.5 76.5 64.5 79 64 82"/>
+      <path class="ki-bow" d="M62.6 64.6 L66.6 67.2"/>
+      <path class="ki-bow" d="M66.4 64.4 L62.8 67.4"/>
+      <path class="ki-bow" d="M62 74.6 L65.8 77"/>
+      <path class="ki-bow" d="M65.6 74.4 L62.2 77.2"/>
+    </g>
+  </g>
+</svg>

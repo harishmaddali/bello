@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Crunching the numbers">
+  <style>
+    .ab-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .ab-m1 { animation: ab-m1 3.8s cubic-bezier(.5,.05,.5,1.15) infinite; }
+    .ab-m2 { animation: ab-m2 3.8s cubic-bezier(.5,.05,.5,1.15) infinite; }
+    .ab-m3 { animation: ab-m3 3.8s cubic-bezier(.5,.05,.5,1.15) infinite; }
+    @keyframes ab-m1 { 0%, 10% { transform: translateX(0); } 20%, 100% { transform: translateX(27.5px); } }
+    @keyframes ab-m2 { 0%, 38% { transform: translateX(0); } 48%, 100% { transform: translateX(-36.5px); } }
+    @keyframes ab-m3 { 0%, 56% { transform: translateX(0); } 66%, 100% { transform: translateX(-19.6px); } }
+    .ab-fade { animation: ab-fade 3.8s linear infinite; }
+    @keyframes ab-fade { 0%, 86% { opacity: 1; } 95%, 99.9% { opacity: 0; } 100% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) {
+      .ab-m1, .ab-m2, .ab-m3, .ab-fade { animation: none; }
+    }
+  </style>
+  <path class="ab-ink" stroke-width="2.6" stroke-linejoin="round"
+        d="M30 42 C46 40.8 74 40.8 90 42 C91.4 53 91.2 67 90.2 78 C74 79.4 46 79.2 29.8 78 C28.6 67 28.8 53 30 42 Z"/>
+  <path class="ab-ink" stroke-width="2" opacity=".7" d="M30 55 C50 54 70 55.5 90 54.8"/>
+  <path class="ab-ink" stroke-width="2" opacity=".7" d="M30 67.5 C50 66.8 70 68 90 67.3"/>
+  <g class="ab-fade">
+    <circle fill="var(--bello-ink, #1E2A21)" cx="37" cy="54.8" r="3.6"/>
+    <circle fill="var(--bello-ink, #1E2A21)" cx="45.5" cy="54.5" r="3.6"/>
+    <circle class="ab-m1" fill="var(--bello-accent, #3E7B4F)" cx="54" cy="54.7" r="3.6"/>
+    <circle fill="var(--bello-ink, #1E2A21)" cx="83" cy="67.3" r="3.6"/>
+    <circle class="ab-m2" fill="var(--bello-accent, #3E7B4F)" cx="74.5" cy="67.5" r="3.6"/>
+    <circle class="ab-m3" fill="var(--bello-ink, #1E2A21)" cx="66" cy="67.2" r="3.6"/>
+  </g>
+</svg>

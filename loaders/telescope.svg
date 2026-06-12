@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Scanning the stars">
+  <style>
+    .te-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .te-tube { transform-origin: 60px 62px; animation: te-aim 3.6s ease-in-out infinite; }
+    @keyframes te-aim {
+      0%, 38%  { transform: rotate(0deg); }
+      48%      { transform: rotate(10deg); }
+      52%      { transform: rotate(8deg); }
+      90%      { transform: rotate(8deg); }
+      100%     { transform: rotate(0deg); }
+    }
+    .te-star { fill: var(--bello-accent, #3E7B4F); transform-box: fill-box; transform-origin: 50% 50%; }
+    .te-s1 { animation: te-s1 3.6s cubic-bezier(.4,.05,.35,1.2) infinite; }
+    .te-s2 { animation: te-s2 3.6s cubic-bezier(.4,.05,.35,1.2) infinite; }
+    @keyframes te-s1 {
+      0%, 8%    { transform: scale(0) rotate(-20deg); opacity: 0; }
+      14%       { transform: scale(1.2); opacity: 1; }
+      18%, 32%  { transform: scale(1); opacity: 1; }
+      40%, 100% { transform: scale(0) rotate(15deg); opacity: 0; }
+    }
+    @keyframes te-s2 {
+      0%, 56%   { transform: scale(0) rotate(-20deg); opacity: 0; }
+      62%       { transform: scale(1.2); opacity: 1; }
+      66%, 82%  { transform: scale(1); opacity: 1; }
+      90%, 100% { transform: scale(0) rotate(15deg); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .te-tube, .te-s1, .te-s2 { animation: none; }
+      .te-s2 { opacity: 0; }
+      .te-s1 { transform: none; opacity: 1; }
+    }
+  </style>
+  <!-- tripod -->
+  <path class="te-ink" stroke-width="2.6" d="M60 62 C55 68.5 50 74.5 44 80"/>
+  <path class="te-ink" stroke-width="2.6" d="M60 62 C65 68.5 70 74.5 76 80"/>
+  <!-- tube -->
+  <g class="te-tube">
+    <path class="te-ink" stroke-width="7" d="M52.5 56.5 C60 49 68 41.5 76.5 34.5"/>
+    <path class="te-ink" stroke-width="3.4" d="M49.5 60 C51 58.5 52.5 57 54 55.5"/>
+    <path stroke="var(--bello-accent, #3E7B4F)" stroke-width="2.4" stroke-linecap="round" fill="none" d="M78.5 32.8 C79.6 31.7 80.7 30.6 81.8 29.5"/>
+  </g>
+  <circle fill="var(--bello-ink, #1E2A21)" cx="60" cy="62" r="2.3"/>
+  <!-- stars it finds -->
+  <path class="te-star te-s1" d="M86 22.5 C86.5 26 88 28 90.8 28.5 C88.1 29.3 86.6 31.1 86.2 34.4 C85.6 31.2 84.2 29.3 81.6 28.7 C84.2 28 85.6 26.2 86 22.5 Z"/>
+  <path class="te-star te-s2" d="M92 42 C92.4 44.8 93.6 46.4 95.8 46.8 C93.7 47.4 92.5 48.9 92.2 51.5 C91.7 49 90.6 47.5 88.5 47 C90.6 46.4 91.7 45 92 42 Z"/>
+</svg>
