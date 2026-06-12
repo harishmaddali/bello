@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Lifting it up">
+  <style>
+    .bl-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .bl-sway { transform-origin: 60px 85px; animation: bl-sway 3.1s ease-in-out infinite alternate; }
+    @keyframes bl-sway { from { transform: rotate(-2.5deg); } to { transform: rotate(2.5deg); } }
+    .bl-bob { animation: bl-bob 2.4s ease-in-out infinite alternate; }
+    @keyframes bl-bob { from { transform: translateY(3.5px); } to { transform: translateY(-3.5px); } }
+    @media (prefers-reduced-motion: reduce) {
+      .bl-sway, .bl-bob { animation: none; }
+    }
+  </style>
+  <g class="bl-sway">
+    <g class="bl-bob">
+      <path fill="var(--bello-paper, #FCFEFA)" stroke="var(--bello-ink, #1E2A21)" stroke-width="2.4" stroke-linejoin="round"
+            d="M60 28 C68.5 28.5 74 35 73.5 43.5 C73 51 67.5 56.5 60.5 56.5 C53 56.5 47.5 50.5 47.2 43 C46.9 35 52.5 27.7 60 28 Z"/>
+      <path stroke="var(--bello-accent, #3E7B4F)" stroke-width="2" stroke-linecap="round" fill="none" opacity=".8"
+            d="M53.5 34.5 C54.8 32.3 57 30.8 59.3 30.4"/>
+      <path class="bl-ink" stroke-width="2" stroke-linejoin="round" d="M58 56.5 L60.3 60 L62.5 56.5"/>
+      <path class="bl-ink" stroke-width="1.6" opacity=".7" d="M60.3 60 C58.5 66 62 70 60 75.5 C58.5 79 60.5 82 60 85"/>
+    </g>
+  </g>
+</svg>

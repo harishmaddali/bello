@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Fishing for answers">
+  <style>
+    .fi-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .fi-water { animation: fi-water 2.5s ease-in-out infinite alternate; }
+    @keyframes fi-water { from { transform: translateX(-5px); } to { transform: translateX(5px); } }
+    .fi-bob { animation: fi-bob 1.5s ease-in-out infinite alternate; }
+    @keyframes fi-bob { from { transform: translateY(0); } to { transform: translateY(4px); } }
+    .fi-rip { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-width: 1.8;
+              transform-origin: 64.7px 72px; animation: fi-rip 3s ease-out infinite; }
+    @keyframes fi-rip {
+      0%, 16%   { transform: scale(.3); opacity: 0; }
+      26%       { opacity: .5; }
+      52%, 100% { transform: scale(1.5); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .fi-water, .fi-bob, .fi-rip { animation: none; }
+      .fi-rip { opacity: 0; }
+    }
+  </style>
+  <!-- rod -->
+  <path class="fi-ink" stroke-width="2.6" d="M88 84 C80 68 73 51 65.5 38.5"/>
+  <path class="fi-ink" stroke-width="2.2" d="M84.5 80 C86.5 78.8 88.5 78 90.5 77.5"/>
+  <!-- line + bobber -->
+  <g class="fi-bob">
+    <path class="fi-ink" stroke-width="1.6" opacity=".7" d="M65.5 38.5 C65 48 64.8 56 64.7 64.3"/>
+    <circle fill="var(--bello-paper, #FCFEFA)" stroke="var(--bello-ink, #1E2A21)" stroke-width="2.2" cx="64.7" cy="67" r="3.1"/>
+    <path fill="var(--bello-accent, #3E7B4F)" d="M61.8 66.6 C62.2 64.1 67.2 64.1 67.6 66.6 C65.7 66.9 63.7 66.9 61.8 66.6 Z"/>
+  </g>
+  <ellipse class="fi-rip" cx="64.7" cy="72" rx="8" ry="2.6"/>
+  <!-- water -->
+  <path class="fi-ink fi-water" stroke-width="2.6" d="M20 76 Q28 72.5 36 76 T52 76 T68 76 T84 76"/>
+</svg>

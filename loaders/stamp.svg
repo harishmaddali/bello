@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Making it official">
+  <style>
+    .sm-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .sm-press { transform-origin: 60px 50px; animation: sm-press 3.6s ease-in-out infinite; }
+    @keyframes sm-press {
+      0%, 12%   { transform: translateY(0); }
+      20%       { transform: translateY(15px); }
+      23%       { transform: translateY(15px) scale(1.04, .94); }
+      30%       { transform: translateY(15px) scale(1); }
+      40%       { transform: translateY(-2px); }
+      46%, 100% { transform: translateY(0); }
+    }
+    .sm-mark { transform-origin: 60px 72.5px; animation: sm-mark 3.6s cubic-bezier(.4,.05,.35,1.2) infinite; }
+    @keyframes sm-mark {
+      0%, 26%   { transform: scale(.7); opacity: 0; }
+      34%       { transform: scale(1.1); opacity: 1; }
+      40%, 100% { transform: scale(1); opacity: 1; }
+    }
+    .sm-fade { animation: sm-fade 3.6s linear infinite; }
+    @keyframes sm-fade { 0%, 84% { opacity: 1; } 93%, 99.9% { opacity: 0; } 100% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) {
+      .sm-press, .sm-mark, .sm-fade { animation: none; }
+      .sm-mark { transform: none; opacity: 1; }
+    }
+  </style>
+  <g class="sm-fade">
+    <g class="sm-mark">
+      <path stroke="var(--bello-accent, #3E7B4F)" stroke-width="2.2" fill="none" stroke-linecap="round"
+            d="M60 65.5 C64.3 65.8 67.2 68.6 67 72.4 C66.8 76.3 63.5 79.2 59.6 79 C55.8 78.8 53 75.8 53.2 72 C53.4 68.3 56.3 65.3 60 65.5"/>
+      <path stroke="var(--bello-accent, #3E7B4F)" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"
+            d="M56.4 72.2 C57.5 73.5 58.5 74.7 59.3 75.7 C61 72.9 62.9 70.5 64.8 68.7"/>
+    </g>
+    <g class="sm-press">
+      <circle class="sm-ink" stroke-width="2.4" cx="60" cy="35.5" r="3.4"/>
+      <path class="sm-ink" stroke-width="2.6" d="M60 39 C60 41.2 60 43.3 60 45.5"/>
+      <path fill="var(--bello-paper, #FCFEFA)" stroke="var(--bello-ink, #1E2A21)" stroke-width="2.4" stroke-linejoin="round"
+            d="M48 46 C56 45.2 64 45.2 72 46 C72.8 49 72.8 52.5 72.2 55.5 C64 56.4 56 56.4 47.8 55.5 C47.2 52.5 47.2 49 48 46 Z"/>
+    </g>
+  </g>
+</svg>

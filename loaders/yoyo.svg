@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Winding it up">
+  <style>
+    .yo-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .yo-string {
+      stroke-dasharray: 100 150; stroke-dashoffset: 101;
+      animation: yo-string 2.8s cubic-bezier(.55,.08,.6,1) infinite;
+    }
+    @keyframes yo-string {
+      0%        { stroke-dashoffset: 101; }
+      38%       { stroke-dashoffset: 0; }
+      52%       { stroke-dashoffset: 0; }
+      90%, 100% { stroke-dashoffset: 101; }
+    }
+    .yo-disc { animation: yo-drop 2.8s cubic-bezier(.55,.08,.6,1) infinite; }
+    @keyframes yo-drop {
+      0%        { transform: translateY(0); }
+      38%       { transform: translateY(30px); }
+      52%       { transform: translateY(30px); }
+      90%, 100% { transform: translateY(0); }
+    }
+    .yo-spin { transform-origin: 60px 39px; animation: yo-spin .45s linear infinite; }
+    @keyframes yo-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) {
+      .yo-string, .yo-disc, .yo-spin { animation: none; }
+      .yo-string { stroke-dasharray: none; stroke-dashoffset: 0; }
+      .yo-disc { transform: translateY(30px); }
+    }
+  </style>
+  <!-- finger -->
+  <path class="yo-ink" stroke-width="2.6" d="M52 30 C57 29.2 63 29.2 68 30"/>
+  <!-- string -->
+  <path class="yo-ink yo-string" stroke-width="1.8" opacity=".75" pathLength="100" d="M60 30 C60.2 40.5 60.1 51 60 61.5"/>
+  <!-- yo-yo -->
+  <g class="yo-disc">
+    <circle fill="var(--bello-paper, #FCFEFA)" stroke="var(--bello-ink, #1E2A21)" stroke-width="2.5" cx="60" cy="39" r="7.6"/>
+    <g class="yo-spin">
+      <path stroke="var(--bello-accent, #3E7B4F)" stroke-width="2.2" stroke-linecap="round" fill="none"
+            d="M64.3 36.4 C65.3 38.1 65.4 40.2 64.6 42"/>
+    </g>
+    <circle fill="var(--bello-ink, #1E2A21)" cx="60" cy="39" r="2"/>
+  </g>
+</svg>

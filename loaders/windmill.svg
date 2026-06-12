@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Catching the wind">
+  <style>
+    .wm-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .wm-petal { fill: var(--bello-paper, #FCFEFA); stroke: var(--bello-ink, #1E2A21); stroke-width: 2; stroke-linejoin: round; }
+    .wm-spin { transform-origin: 60px 50px; animation: wm-spin 2.4s linear infinite; }
+    @keyframes wm-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) {
+      .wm-spin { animation: none; }
+    }
+  </style>
+  <path class="wm-ink" stroke-width="2.6" d="M60 84 C60.3 72 60.1 60 60 52"/>
+  <path class="wm-ink" stroke-width="2.2" opacity=".6" d="M48 84.5 Q60 86.5 72 84.5"/>
+  <g class="wm-spin">
+    <path class="wm-petal" d="M60 50 C63 43.5 63 37.5 60 33.5 C57 37.5 57 43.5 60 50 Z"/>
+    <path class="wm-petal" transform="rotate(90 60 50)" d="M60 50 C63 43.5 63 37.5 60 33.5 C57 37.5 57 43.5 60 50 Z"/>
+    <path class="wm-petal" fill="var(--bello-accent, #3E7B4F)" transform="rotate(180 60 50)" d="M60 50 C63 43.5 63 37.5 60 33.5 C57 37.5 57 43.5 60 50 Z"/>
+    <path class="wm-petal" transform="rotate(270 60 50)" d="M60 50 C63 43.5 63 37.5 60 33.5 C57 37.5 57 43.5 60 50 Z"/>
+  </g>
+  <circle fill="var(--bello-ink, #1E2A21)" cx="60" cy="50" r="2.4"/>
+</svg>

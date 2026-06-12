@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Setting it in motion">
+  <style>
+    .dm-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .dm-tile { fill: var(--bello-paper, #FCFEFA); stroke: var(--bello-ink, #1E2A21); stroke-width: 2.3; stroke-linejoin: round; }
+    .dm-1 { transform-origin: 44.5px 79.5px; animation: dm-1 3.8s cubic-bezier(.6,.05,.8,.4) infinite; }
+    .dm-2 { transform-origin: 60.5px 79.5px; animation: dm-2 3.8s cubic-bezier(.6,.05,.8,.4) infinite; }
+    .dm-3 { transform-origin: 76.5px 79.5px; animation: dm-3 3.8s cubic-bezier(.6,.05,.8,.4) infinite; }
+    @keyframes dm-1 { 0%, 8%  { transform: rotate(0deg); } 22%, 100% { transform: rotate(76deg); } }
+    @keyframes dm-2 { 0%, 20% { transform: rotate(0deg); } 34%, 100% { transform: rotate(74deg); } }
+    @keyframes dm-3 { 0%, 32% { transform: rotate(0deg); } 46%, 100% { transform: rotate(84deg); } }
+    .dm-fade { animation: dm-fade 3.8s linear infinite; }
+    @keyframes dm-fade { 0%, 84% { opacity: 1; } 93%, 99.9% { opacity: 0; } 100% { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) {
+      .dm-1, .dm-2, .dm-3, .dm-fade { animation: none; }
+    }
+  </style>
+  <path class="dm-ink" stroke-width="2.4" d="M28 80 Q60 82.5 92 80"/>
+  <g class="dm-fade">
+    <g class="dm-1">
+      <path class="dm-tile" d="M36 55.5 C38.5 55 41.5 55 44 55.5 C44.6 63.5 44.6 71.5 44.2 79.5 C41.5 80 38.5 80 36 79.5 C35.5 71.5 35.5 63.5 36 55.5 Z"/>
+      <circle fill="var(--bello-ink, #1E2A21)" cx="40" cy="62" r="1.5"/>
+      <circle fill="var(--bello-ink, #1E2A21)" cx="40.2" cy="72.5" r="1.5"/>
+    </g>
+    <g class="dm-2">
+      <path class="dm-tile" d="M52 55.5 C54.5 55 57.5 55 60 55.5 C60.6 63.5 60.6 71.5 60.2 79.5 C57.5 80 54.5 80 52 79.5 C51.5 71.5 51.5 63.5 52 55.5 Z"/>
+      <circle fill="var(--bello-accent, #3E7B4F)" cx="56" cy="62" r="1.5"/>
+      <circle fill="var(--bello-accent, #3E7B4F)" cx="56.2" cy="72.5" r="1.5"/>
+    </g>
+    <g class="dm-3">
+      <path class="dm-tile" d="M68 55.5 C70.5 55 73.5 55 76 55.5 C76.6 63.5 76.6 71.5 76.2 79.5 C73.5 80 70.5 80 68 79.5 C67.5 71.5 67.5 63.5 68 55.5 Z"/>
+      <circle fill="var(--bello-ink, #1E2A21)" cx="72" cy="62" r="1.5"/>
+      <circle fill="var(--bello-ink, #1E2A21)" cx="72.2" cy="72.5" r="1.5"/>
+    </g>
+  </g>
+</svg>

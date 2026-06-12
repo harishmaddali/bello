@@ -2,7 +2,7 @@
 
 Hand-drawn loading animations for thoughtful products.
 
-Fifty-one sketchy, ink-and-paper loaders — the kind you show while your product is writing, thinking,
+Sixty sketchy, ink-and-paper loaders — the kind you show while your product is writing, thinking,
 or brewing something for the user. Each one is a **single self-contained `.svg` file**: animation,
 easing, and reduced-motion handling baked in. No JavaScript, no CSS file, no dependencies.
 
@@ -69,6 +69,15 @@ python3 -m http.server 4173   # then visit http://localhost:4173
 | [`loaders/battery.svg`](loaders/battery.svg) | Battery | "Charging it up…" | provisioning, warm-up |
 | [`loaders/origami.svg`](loaders/origami.svg) | Origami | "Folding it neatly…" | formatting, packaging |
 | [`loaders/traffic.svg`](loaders/traffic.svg) | Traffic | "Waiting for green…" | approvals, gating |
+| [`loaders/umbrella.svg`](loaders/umbrella.svg) | Umbrella | "Weathering the wait…" | retries, degraded mode |
+| [`loaders/snail.svg`](loaders/snail.svg) | Snail | "Taking its time…" | known-slow jobs |
+| [`loaders/yoyo.svg`](loaders/yoyo.svg) | Yo-yo | "Winding it up…" | retries, polling |
+| [`loaders/windmill.svg`](loaders/windmill.svg) | Windmill | "Catching the wind…" | background processing |
+| [`loaders/fishing.svg`](loaders/fishing.svg) | Fishing | "Fishing for answers…" | long lookups |
+| [`loaders/balloon.svg`](loaders/balloon.svg) | Balloon | "Lifting it up…" | uploads, optimism |
+| [`loaders/stamp.svg`](loaders/stamp.svg) | Stamp | "Making it official…" | confirmations, signing |
+| [`loaders/magnet.svg`](loaders/magnet.svg) | Magnet | "Pulling things in…" | imports, ingestion |
+| [`loaders/dominoes.svg`](loaders/dominoes.svg) | Dominoes | "Setting it in motion…" | pipelines, chained steps |
 
 ## Use
 

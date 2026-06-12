@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Weathering the wait">
+  <style>
+    .um-ink { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-linecap: round; }
+    .um-tilt { transform-origin: 60px 58px; animation: um-tilt 2.8s ease-in-out infinite alternate; }
+    @keyframes um-tilt { from { transform: rotate(-4deg); } to { transform: rotate(2deg); } }
+    .um-rain { stroke: var(--bello-ink, #1E2A21); fill: none; stroke-width: 2.2; stroke-linecap: round;
+               animation: um-rain 1.15s linear infinite; }
+    .um-acc { stroke: var(--bello-accent, #3E7B4F); }
+    .um-r2 { animation-delay: -.3s; } .um-r3 { animation-delay: -.6s; } .um-r4 { animation-delay: -.85s; }
+    @keyframes um-rain {
+      0%   { transform: translate(0, 0); opacity: 0; }
+      18%  { opacity: .75; }
+      78%  { opacity: .75; }
+      100% { transform: translate(-7px, 30px); opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .um-tilt, .um-rain { animation: none; }
+      .um-rain { opacity: .5; }
+    }
+  </style>
+  <!-- rain -->
+  <path class="um-rain um-r1" d="M30 30 L27.8 37.5"/>
+  <path class="um-rain um-acc um-r2" d="M43 26 L40.8 33.5"/>
+  <path class="um-rain um-r3" d="M82 28 L79.8 35.5"/>
+  <path class="um-rain um-r4" d="M94 32 L91.8 39.5"/>
+  <!-- umbrella -->
+  <g class="um-tilt">
+    <path class="um-ink" stroke-width="2.6" stroke-linejoin="round" d="M38 58 C42 46.5 78 46.5 82 58"/>
+    <path class="um-ink" stroke-width="2.2" d="M38 58 C41 55.2 45 55.2 48.5 58"/>
+    <path class="um-ink" stroke-width="2.2" d="M48.5 58 C52 55.2 56.5 55.2 60 58"/>
+    <path class="um-ink" stroke-width="2.2" d="M60 58 C63.5 55.2 68 55.2 71.5 58"/>
+    <path class="um-ink" stroke-width="2.2" d="M71.5 58 C75 55.2 79 55.2 82 58"/>
+    <path class="um-ink" stroke-width="2.4" d="M60 49.5 C60 47.5 60 45.5 60 43.5"/>
+    <path class="um-ink" stroke-width="2.4" d="M60 58 C60.2 65 60.1 71.5 60 78 C60 81.5 63.5 82.5 65.5 80.5"/>
+  </g>
+</svg>
